@@ -95,8 +95,7 @@ export default class InPageImage extends React.Component {
             index={this.props.indexes[0]}
             images={this.props.images}
             thumbnails={this.props.thumbnails}
-            thumbnailStyle={[styles.inPageSingleThumbnail, {width: styles.WIDTH - 92}]}
-            lightboxStyle={{borderColor: '#3cac54', borderRightWidth: 12}}
+            thumbnailStyle={[styles.inPageSingleThumbnail]}
           />
         </View>
       );

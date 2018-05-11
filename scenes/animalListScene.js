@@ -4,6 +4,7 @@ import { WIDTH } from '../styles/styles';
 import {
   View,
   Text,
+  Image,
   TouchableHighlight,
   TextInput,
   ImageBackground
@@ -26,9 +27,11 @@ class Cell extends React.Component {
           {animal: this.props.item.animal});
         }}
         underlayColor='#bbbbbb'
+        style= {{marginVertical: 0 , maxWidth:"89%"}}
       >
-        <View style={{height:30, paddingLeft: 5}}>
-          <Text style={{color: 'white'}}>{this.props.item.name}</Text>
+        <View style={{paddingLeft: 5,flexDirection: 'row'}}>
+          <Image style={{width: "15%", height: "100%",marginRight: 5}} source={require('../images/footPrint2.png')}/>
+          <Text style={{color: 'black', fontSize:20}}>{this.props.item.name}</Text>
         </View>
       </TouchableHighlight>
     );
@@ -43,14 +46,14 @@ class SectionItem extends React.Component {
   render() {
     return (
       <View style={{
-        backgroundColor: this.props.bgColor,
+        backgroundColor: undefined,
         width: 30,
         height: 30,
         borderLeftWidth: 1,
-        borderColor: 'white',
+        borderColor: 'black',
         justifyContent: 'center',
       }}>
-        <Text style={{color: 'white', textAlign: 'center', fontWeight: '700'}}>
+        <Text style={{color: 'black', textAlign: 'center', fontWeight: '700'}}>
           {this.props.title}
         </Text>
       </View>
@@ -67,7 +70,7 @@ class SectionHeader extends React.Component {
     // inline styles used for brevity, use a stylesheet when possible
     var textStyle = {
       textAlign:'center',
-      color:'#fff',
+      color:'black',
       fontWeight:'700',
       fontSize:24,
       backgroundColor: 'rgba(0,0,0,0)',
@@ -188,8 +191,7 @@ export default class AnimalListScene extends React.Component {
 
   render() {
     return (
-      <ImageBackground
-        source={require('../images/background/about.png')}
+      <View
         style={{flex: 1, width: WIDTH}}
       >
         <TextInput
@@ -209,7 +211,7 @@ export default class AnimalListScene extends React.Component {
           sectionHeaderHeight={22.5}
           compareFunction={(a,b) => {return a.localeCompare(b); }}
         />
-      </ImageBackground>
+      </View>
     );
   }
 }

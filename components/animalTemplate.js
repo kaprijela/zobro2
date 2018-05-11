@@ -14,7 +14,7 @@ export default class AnimalTemplate extends React.Component {
       <View>
         <View>
           <InPageImage firstImage={true} indexes={this.props.firstIndex}
-            thumbnails={this.props.thumbnails} images={this.props.images} />
+            thumbnails={this.props.thumbnails} images={this.props.images}/>
         </View>
         <View style={styles.scrollView}>
           {this.props.children}

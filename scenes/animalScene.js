@@ -1,6 +1,7 @@
 import React from 'react';
 import styles, { HEADER_STYLE } from '../styles/styles';
 
+
 import { TabNavigator , StackNavigator } from 'react-navigation';
 import Camera from 'react-native-camera';
 import { NavigationActions } from 'react-navigation';
@@ -20,6 +21,9 @@ import {
 import { scenes, sceneTitles } from '../scenes';
 import animals from '../animals';
 import AnimalNeighbourScene from '../components/animalNeighbourScene';
+
+
+
 
 class TextTab extends React.Component {
   constructor(props) {

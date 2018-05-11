@@ -2,6 +2,7 @@ import {StyleSheet} from 'react-native';
 import Dimensions from 'Dimensions';
 
 export const WIDTH = Dimensions.get('window').width;
+export const HEIGHT = Dimensions.get('window').height;
 const ANIMAL_RIGHT_BORDER = 12;
 
 const backgroundColors = [
@@ -13,15 +14,91 @@ const backgroundColors = [
       '#2d9946',
 ];
 
-export const TEXT_COLOR = 'white';
+export const TEXT_COLOR = 'black';
 export const HEADER_STYLE = {
-  headerTintColor: '#DEDEDE',
+  headerTintColor: '#FFFFFF',
   headerStyle: {
-    backgroundColor: '#3C3C3B',
+  backgroundColor: '#446E5C',
   }
 };
 
 const styles = {
+  headerWithImage:{
+    alignItems: 'center',
+    height: "10%",
+    marginBottom: 20,
+    marginTop: 20,
+    width:"100%",
+  },
+  boxIm: {
+    width: "65%",
+    height: "65%",
+  },
+  box: {
+    height:"100%",
+    width:"32%",
+    alignItems:'center',
+  },
+  boxes: {
+    flexDirection: 'row',
+    height:"30%",
+    alignSelf:'center',
+    marginTop:"10%",
+  },
+  obrazok: {
+    position:'absolute',
+    bottom:0,
+    right:0,
+    left:0,
+    width:"100%",
+  },
+  container: {
+    flex:1,
+  },
+  nadpis: {
+    color: '#FFFFFF',
+    fontSize:50,
+    fontWeight: '900',
+    textAlign: 'left',
+    textAlign:'left',
+    marginTop:"10%",
+    marginLeft:"15%",
+  },
+
+  nadpis2: {
+    color: 'white',
+    fontSize:50,
+    fontWeight: '900',
+    textAlign: 'left',
+    textAlign:'left',
+    marginTop: -10,
+    marginLeft:"15%",
+  },
+
+  firstBox: {
+    backgroundColor: "#7DC383",
+    height:"50%",
+    width:"100%",
+  },
+  secondBox: {
+    backgroundColor: "#446E5C",
+    height:"50%",
+    width:"100%",
+    alignSelf:'center',
+
+  },
+  mainText: {
+    fontSize:30,
+    fontWeight:'900',
+    textAlign:'center',
+    marginVertical: 20,
+  },
+  popis: {
+    color: 'white',
+    fontSize: 14,
+    fontWeight: '800',
+    textAlign:'center',
+  },
   text: {
     fontSize: 18,
     color: TEXT_COLOR,
@@ -41,7 +118,6 @@ const styles = {
   },
 
   contentView: {
-    flex: 1,
     backgroundColor: 'white',
     paddingRight: 5,
     paddingLeft: 5,
@@ -94,11 +170,10 @@ const styles = {
     color: '#e6e5eb',
   },
   scrollView: {
-    backgroundColor: '#0b2611',
-    borderRightWidth: ANIMAL_RIGHT_BORDER,
-    borderColor: '#3CAC54',
-    paddingRight: 5,
-    paddingLeft: ANIMAL_RIGHT_BORDER + 5,
+    backgroundColor: 'white',
+    paddingRight: 25,
+    paddingLeft: 25,
+    alignItems:'center',
   },
   ctext: {
     fontSize: 18,
@@ -122,8 +197,9 @@ const styles = {
     fontWeight: 'bold',
   },
   inPageSingleThumbnail: {
-    height: 100,
-    width: (WIDTH - ANIMAL_RIGHT_BORDER - 5 - ANIMAL_RIGHT_BORDER),
+    height: 20*HEIGHT/100,
+    width: 80 * WIDTH/100,
+    alignSelf:'center',
   },
   inPageDuoThumbnailLeft: {
     height: 100,
