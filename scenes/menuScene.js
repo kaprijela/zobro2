@@ -15,7 +15,6 @@ const remoteDB = new PouchDB('https://admin:e5b4b424b1cb@couchdb-616f08.smileupp
 
 localDB.replicate.from(remoteDB, {live: true});  
 
-
 class MainMenuItem extends React.Component {
   constructor(props) {
       super(props);
@@ -36,7 +35,7 @@ class MainMenuItem extends React.Component {
          onPress={() => {this.props.navigation.navigate(sceneTitles[this.props.scene].name, {animal: 'tygrSumatersky'})}}
          >
               <Image style={styles.boxIm} source={imageName}/>
-              <Text style={styles.popis}>{title} </Text>
+              <Text style={styles.popis}>{title}</Text>
       </TouchableOpacity>
     );
   }
@@ -96,9 +95,16 @@ export default class MenuScene extends React.Component {
                         />
                       ))
                     }
-      
             </View>
-          
+
+            <TouchableOpacity
+             style={styles.infoBox}
+             onPress={() => {this.props.navigation.navigate(sceneTitles[scenes.ABOUT].name, {animal: 'tygrSumatersky'})}}
+             >
+                <Image style={styles.obrazokInfo} source={require('../images/info.png')}/>
+                <Text style={styles.popis}> O aplikacií</Text>
+            </TouchableOpacity>
+
         </View>
       </View>
     );

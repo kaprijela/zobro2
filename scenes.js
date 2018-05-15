@@ -19,7 +19,7 @@ export const sceneTitles = {
   [scenes.GAME]: {name: scenes.GAME, title: 'Šifrovací hra', bgColor: '#20642f', barColor: '#3c3c3b', background: require('./images/background/game.png'), img: require('./images/game.png')},
   [scenes.VISITORS]: {name: scenes.VISITORS,  title: 'Pro návštěvníky', bgColor: '#2d9946', barColor: '#3c3c3b', background: require('./images/background/visitors.png'), img: require('./images/people.png')},
   [scenes.SERVICES]: {name: scenes.SERVICES,  title: 'Služby', bgColor: '#267f3b', barColor: '#3c3c3b', background: require('./images/background/services.png'), img: require('./images/services.png')},
-  [scenes.ABOUT]: {name: scenes.ABOUT,  title: 'O aplikaci', bgColor: '#37af54', barColor: '#3c3c3b', background: require('./images/background/about.png'), img: require('./images/qr.png')},
+  [scenes.ABOUT]: {name: scenes.ABOUT,  title: 'O aplikaci', bgColor: '#37af54', barColor: '#3c3c3b', background: require('./images/background/about.png'), img: require('./images/info.png')},
 
   [scenes.ANIMAL_DETAIL]: {name: scenes.ANIMAL_DETAIL,  title: 'XXX', bgColor: 'green', barColor: '#3c3c3b' },
   [scenes.ANIMAL_NEIGHBOURS]: {name: scenes.ANIMAL_NEIGHBOURS,  title: 'Sousedi', bgColor: 'blue', barColor: '#3c3c3b' },

@@ -52,6 +52,10 @@ const styles = {
     left:0,
     width:"100%",
   },
+  obrazokInfo: {
+    height:"100%",
+    width:"20%",
+  },
   container: {
     flex:1,
   },
@@ -86,6 +90,13 @@ const styles = {
     width:"100%",
     alignSelf:'center',
 
+  },
+  infoBox: {
+    position: 'absolute',
+    bottom: 10,
+    alignSelf: 'center',
+    flexDirection: 'row',
+    width: "33%",
   },
   mainText: {
     fontSize:30,
