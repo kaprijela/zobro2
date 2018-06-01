@@ -1,0 +1,34 @@
+{
+   "_id" : "alpaka",
+   "facts" : {
+      "Délka březosti" : "342 - 368 dnů",
+      "Délka života" : "15 - 20 let",
+      "Potrava" : "tráva, byliny, sukulenty, mechy",
+      "Počet mláďat" : "1",
+      "Stupeň ohrožení" : "domestikovaný druh",
+      "Velikost" : "výška vkohoutku 100 cm",
+      "Váha" : "55 - 65 kg",
+      "Výskyt" : "náhorní plošiny And, od Ekvádoru po severozápadní Argentinu, Bolívie, Peru",
+      "Způsob života" : "žije ve stádech tvořených 7 - 10 samicemi smláďaty avedoucím samcem"
+   },
+   "images" : [
+      {
+         "full" : "data:image/jpg;base64,/9j/4AA...",
+         "thumbnail" : "data:image/jpg;base64,/9j/4AB..."
+      },
+      {
+         "full" : "data:image/jpg;base64,/9j/4AA...",
+         "thumbnail" : "data:image/jpg;base64,/9j/4AB..."
+      },
+   ],
+   "text_adult" : [
+      "Rodina lam alpak (<Text style={styles.italic}>Vicugna pacos</Text>) bydlí na tomto místě od roku 2009. Tehdy se stal vůdcem stáda samec Marcel z&nbsp;německé Zoo Stuttgart. Ukázalo se, že je to skutečně dobrý plemeník, a tak hned druhý rok přivedlo několik samic na svět mládě.",
+      "Novorozenec se umí brzy osamostatnit a k&nbsp;matce se chodí jen napít. Samec mívá ve stádě vedoucí úlohu a mláďata se ho naučí brzy respektovat. Když si u&nbsp;nás jednou udělalo mládě z&nbsp;plotu prolézačku a snažilo se jej podlézt, Marcel neváhal a ukázal mu svoji autoritu. Přistoupil k&nbsp;němu, břichem ho přimáčkl k&nbsp;zemi a vyčkal, dokud ho nepřišla vysvobodit matka. Mládě se poučilo a už se nikdy nepokusilo dostat mimo expozici."
+   ],
+   "text_child" : [
+      "Jestli někdy pojedete do Jižní Ameriky, zkuste navštívit Peru. Pozor, to není název tamní prádelny! Jmenuje se tak celý jeden stát. Když si na dlouhé cestě konečně vyperete svoje smradlavé a zašpiněné peruánské ponožky, místní obyvatelé podle jejich barvy poznají, jakou srst měly lamy alpaky, zvířecí obyvatelky Peru a okolí, díky nimž mohly být tyto ponožky vyrobeny. Dobří ponožkoví detektivové poznají, že alpaka může být:",
+      "<Text style={styles.strong}>BÍLÁ jako ovce</Text>",
+      "Alpaku si Peruánci nevycvičili pro těžkou práci. Slouží jim podobně jako ovce u&nbsp;nás v&nbsp;Evropě – lidé ji jednou za čas ostříhají, čímž získají spoustu vlny. Pletou z&nbsp;ní nejen ponožky, ale i&nbsp;svetry nebo čepice."
+   ]
+}
+
