@@ -1,0 +1,170 @@
+{
+   "feeding_events" : [
+      {
+         "_id" : "ledved1030",
+         "animal_id" : "medvedLedni",
+         "end_date" : "2018-03-14",
+         "name" : "Medvěd lední",
+         "place" : "Expozice ledních medvědů",
+         "start_date" : "2017-11-01",
+         "time" : "10:30",
+         "weekdays" : [
+            5,
+            6
+         ]
+      },
+      {
+         "_id" : "panda1100",
+         "animal_id" : "pandaCervena",
+         "end_date" : "2018-03-14",
+         "name" : "Panda červená",
+         "place" : "Expozice pandy červené",
+         "start_date" : "2017-11-01",
+         "time" : "11:00",
+         "weekdays" : [
+            5,
+            6
+         ]
+      },
+      {
+         "_id" : "simpanz1130",
+         "animal_id" : "simpanz",
+         "end_date" : "2018-03-14",
+         "name" : "Šimpanz",
+         "place" : "Pavilon opic",
+         "start_date" : "2017-11-01",
+         "time" : "11:30",
+         "weekdays" : [
+            5
+         ]
+      },
+      {
+         "_id" : "lev1400",
+         "animal_id" : "levKonzsky",
+         "end_date" : "2018-03-14",
+         "name" : "Lev konžský",
+         "place" : "Expozice lvů konžských",
+         "start_date" : "2017-11-01",
+         "time" : "14:00",
+         "weekdays" : [
+            5,
+            6
+         ]
+      },
+      {
+         "_id" : "drapkate1430",
+         "animal_id" : "",
+         "end_date" : "2018-03-14",
+         "name" : "Drápkaté opičky",
+         "place" : "Tropické království",
+         "start_date" : "2017-11-01",
+         "time" : "14:30",
+         "weekdays" : [
+            5,
+            6
+         ]
+      },
+      {
+         "_id" : "vari1130",
+         "animal_id" : "",
+         "end_date" : "2018-03-14",
+         "name" : "Vari černobílý",
+         "place" : "Pavilon opic",
+         "start_date" : "2017-11-01",
+         "time" : "11:30",
+         "weekdays" : [
+            6
+         ]
+      },
+      {
+         "_id" : "vanoce0930",
+         "animal_id" : "tygrSumatersky",
+         "end_date" : "2016-12-25",
+         "name" : "Tygr sumaterský",
+         "place" : "Tygří skály",
+         "start_date" : "2016-12-24",
+                 "time" : "9:30",
+                 "weekdays" : [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                 ]
+              },
+              {
+         "_id" : "vanoce1015",
+         "animal_id" : "lachtanMedvedi",
+         "end_date" : "2016-12-25",
+         "name" : "Lachtan medvědí",
+         "place" : "Expozice lachtanů",
+         "start_date" : "2016-12-24",
+         "time" : "10:15",
+         "weekdays" : [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+         ]
+      },
+      {
+         "_id" : "vanoce1130",
+         "animal_id" : "medvedLedni",
+         "end_date" : "2016-12-25",
+         "name" : "Medvěd lední",
+         "place" : "Výběh ledních medvědů",
+         "start_date" : "2016-12-24",
+         "time" : "11:30",
+         "weekdays" : [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+         ]
+      },
+      {
+         "_id" : "vanoce1200",
+         "animal_id" : "simpanz",
+         "end_date" : "2016-12-25",
+         "name" : "Šimpanz",
+         "place" : "Pavilon opic",
+         "start_date" : "2016-12-24",
+         "time" : "12:00",
+         "weekdays" : [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+         ]
+      },
+      {
+         "_id" : "vanoce1230",
+         "animal_id" : "",
+         "end_date" : "2016-12-25",
+         "name" : "Kosman zakrslý",
+         "place" : "Tropické království",
+         "start_date" : "2016-12-24",
+         "time" : "12:30",
+         "weekdays" : [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+         ]
+      }
+   ]
+}
