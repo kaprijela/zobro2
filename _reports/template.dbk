@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<article lang="en">
+  <articleinfo>
+    <title>PB138 Zoo Application Improvement</title>
+    <author>
+      <firstname>Name</firstname>
+      <surname>Surname</surname>
+    </author>
+  </articleinfo>
+
+  <section>
+    <title id="my-task">My task</title>
+
+    <para>My main task was...</para>
+  </section>
+
+  <section>
+    <title>Problems</title>
+
+    <para/>
+  </section>
+
+  <section>
+    <title>Summary</title>
+
+    <para>This project...</para>
+  </section>
+</article>
