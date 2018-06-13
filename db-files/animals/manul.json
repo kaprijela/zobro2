@@ -30,10 +30,10 @@
       }
    ],
    "text_adult" : [
-      "Stojíte před výběhem manula (<Text style={styles.italic}>Otocolobus manul</Text>). Kdo se skrývá pod tímto tajemným jménem?",
-      "Manul je kočkovitá šelma pocházející z&nbsp;centrální Asie, kde se vyskytuje na území od Kaspického moře po Čínu a Mongolsko. Je velký asi jako kočka domácí, ale hustá a dlouhá srst jej činí mohutnějším. Srst manula také chrání před chladem kamenitých suchých stepí a hor, které jsou jeho přirozeným působištěm. Nížinám se vyhýbá, stejně tak i&nbsp;místům, která zapadají sněhem. Barva kožichu se mu během roku mění ze zimní jednotnější šedé barvy na jarní šedo-okrovou s&nbsp;tmavšími proužky na ocasu a na tvářích. Na rozdíl od domácích koček má manul kruhovité zorničky, kratší nohy, kvůli kterým běhá pomaleji, a taky vydává zvuk, který se podobá štěkotu malého psa, tedy ne zrovna typické mňoukání.",
-      "Je to samotář. Žije izolovaně ve svém teritoriu, které obvykle dosahuje 3–5&nbsp;kilometrů čtverečních. Většinu dne tráví ve skalních dutinách, norách jiných zvířat či dalších úkrytech a za soumraku vyráží na lov. Svou kořist sleduje schovaný za porost a kamenitý terén. Někdy také číhá před vchodem do nory a čeká, až se její obyvatel vydá ven. V&nbsp;maskování mu pomáhá sezónně se měnící barva srsti. Živí se především drobnými savci, například pišťuchami (menší příbuzný zajíce, který se podobá spíš morčeti), hraboši, také menšími druhy ptáků a plazů či hmyzem. Když je manul pronásledován, snaží se uniknout mezi balvany a skrýt se v&nbsp;úzkých puklinách.",
-      "Naši manulové, Manu a Rosa, jsou samotáři stejně jako jejich příbuzní z&nbsp;Asie, a proto žijí v&nbsp;oddělených výbězích a pohromadě jsou jen krátce, především v&nbsp;období páření, které probíhá od února do května. Manu se do naší zoo přistěhoval z&nbsp;Jihlavy v&nbsp;roce 2012 a Rosa přijela v&nbsp;roce 2015 až z&nbsp;Velké Británie. Ačkoliv je odchov manulů velmi obtížný, v&nbsp;dubnu 2016 se jim narodila čtyři mláďata, dva kocourci a dvě kočičky."
+      "Stojíte před výběhem manula (Otocolobus manul). Kdo se skrývá pod tímto tajemným jménem?",
+      "Manul je kočkovitá šelma pocházející z centrální Asie, kde se vyskytuje na území od Kaspického moře po Čínu a Mongolsko. Je velký asi jako kočka domácí, ale hustá a dlouhá srst jej činí mohutnějším. Srst manula také chrání před chladem kamenitých suchých stepí a hor, které jsou jeho přirozeným působištěm. Nížinám se vyhýbá, stejně tak i místům, která zapadají sněhem. Barva kožichu se mu během roku mění ze zimní jednotnější šedé barvy na jarní šedo-okrovou s tmavšími proužky na ocasu a na tvářích. Na rozdíl od domácích koček má manul kruhovité zorničky, kratší nohy, kvůli kterým běhá pomaleji, a taky vydává zvuk, který se podobá štěkotu malého psa, tedy ne zrovna typické mňoukání.",
+      "Je to samotář. Žije izolovaně ve svém teritoriu, které obvykle dosahuje 3–5 kilometrů čtverečních. Většinu dne tráví ve skalních dutinách, norách jiných zvířat či dalších úkrytech a za soumraku vyráží na lov. Svou kořist sleduje schovaný za porost a kamenitý terén. Někdy také číhá před vchodem do nory a čeká, až se její obyvatel vydá ven. V maskování mu pomáhá sezónně se měnící barva srsti. Živí se především drobnými savci, například pišťuchami (menší příbuzný zajíce, který se podobá spíš morčeti), hraboši, také menšími druhy ptáků a plazů či hmyzem. Když je manul pronásledován, snaží se uniknout mezi balvany a skrýt se v úzkých puklinách.",
+      "Naši manulové, Manu a Rosa, jsou samotáři stejně jako jejich příbuzní z Asie, a proto žijí v oddělených výbězích a pohromadě jsou jen krátce, především v období páření, které probíhá od února do května. Manu se do naší zoo přistěhoval z Jihlavy v roce 2012 a Rosa přijela v roce 2015 až z Velké Británie. Ačkoliv je odchov manulů velmi obtížný, v dubnu 2016 se jim narodila čtyři mláďata, dva kocourci a dvě kočičky."
    ],
    "text_child" : [
       "Spát a spát, to já mám rád.",
@@ -41,17 +41,17 @@
       "Zbožňuju spánek. Mrúú.",
       "Počkat, kdo to tu klábosí?",
       "Kdo si zase umanul mě jen tak bez ohlášení navštívit?",
-      "Abyste věděli, tady platí jen to, co si umanu já, protože jen já se jmenuju <Text style={styles.italic}>manul</Text>.",
+      "Abyste věděli, tady platí jen to, co si umanu já, protože jen já se jmenuju manul.",
       "Teď si chci jít trochu schrupnout, takže mě přestaňte otravovat a…",
-      "…&nbsp;jejda, to jste vy, přátelé! Pardon, nepoznal jsem vás!",
+      "… jejda, to jste vy, přátelé! Pardon, nepoznal jsem vás!",
       "Přišli jste se podívat na můj huňatý kožich, viďte?",
-      "Jojo, já vím, že mi sluší. Zároveň je dost praktický. V&nbsp;zimě hřeje, v&nbsp;létě chladí, a tak se v&nbsp;něm cítím vždycky příjemně. Pocházím ze stepí ve střední Asii, kde se během dne hodně mění teploty. Kdyby byly takové teploty v&nbsp;Brně, odpoledne byste chodili v&nbsp;plavkách a večer byste se oblékli jako na severní pól.",
+      "Jojo, já vím, že mi sluší. Zároveň je dost praktický. V zimě hřeje, v létě chladí, a tak se v něm cítím vždycky příjemně. Pocházím ze stepí ve střední Asii, kde se během dne hodně mění teploty. Kdyby byly takové teploty v Brně, odpoledne byste chodili v plavkách a večer byste se oblékli jako na severní pól.",
       "Kdo že to jsem? Garfield? Nic takového! Říkají mi Manu, jsem míň oranžový a nejsem tlusťoch. To dělá jenom ten kožich, jasné?",
-      "Vybrala mi ho moje manulí kamarádka Rosa, protože ta se v&nbsp;módě vyzná nejlíp. Sice spolu nebydlíme, ale jednou za čas se setkáme a popovídáme si. Kdyby tu se mnou byla pořád, užírala by mi z&nbsp;misky a rozčileně bychom pak na sebe štěkali. Mňoukat totiž moc neumíme.",
-      "Stejně je ale Rosa neobyčejná kočka s&nbsp;krásnýma očima. Černé oční panenky má zrovna tak kulaté jako vy. Až se budete mazlit s&nbsp;nějakou kočkou, všimněte si, že její panenky jsou spíš takové podlouhlé.",
-      "Chcete toho o&nbsp;mně vědět víc? Řeknu vám to takhle, kamarádi. Nejsem moc akční. Nejraději se sluním na svém pařezu nebo lovím myši. Když si lehnu k&nbsp;myší díře, vždycky nějaká kořist vyleze a já ji skokem přepadnu. Chce to jen trochu cviku. Nejlepší je lovit ráno a večer, odpoledne se dá tak akorát spát.",
+      "Vybrala mi ho moje manulí kamarádka Rosa, protože ta se v módě vyzná nejlíp. Sice spolu nebydlíme, ale jednou za čas se setkáme a popovídáme si. Kdyby tu se mnou byla pořád, užírala by mi z misky a rozčileně bychom pak na sebe štěkali. Mňoukat totiž moc neumíme.",
+      "Stejně je ale Rosa neobyčejná kočka s krásnýma očima. Černé oční panenky má zrovna tak kulaté jako vy. Až se budete mazlit s nějakou kočkou, všimněte si, že její panenky jsou spíš takové podlouhlé.",
+      "Chcete toho o mně vědět víc? Řeknu vám to takhle, kamarádi. Nejsem moc akční. Nejraději se sluním na svém pařezu nebo lovím myši. Když si lehnu k myší díře, vždycky nějaká kořist vyleze a já ji skokem přepadnu. Chce to jen trochu cviku. Nejlepší je lovit ráno a večer, odpoledne se dá tak akorát spát.",
       "Mrúú. Myslím, že už jsem vám toho pověděl dost.",
-      "Bylo mi ctí se s&nbsp;vámi setkat."
+      "Bylo mi ctí se s vámi setkat."
    ]
 }
 

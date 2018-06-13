@@ -25,31 +25,31 @@
    ],
    "text_adult" : [
       "PSYCHIATRICKÝ CHOROBOPIS",
-      "<Text style={styles.strong}>Jméno:</Text> kajmánek trpasličí (<Text style={styles.italic}>Paleosuchus palpebrosus</Text>)",
-      "<Text style={styles.strong}>Bydliště:</Text> Povodí Amazonky 7062",
+      "Jméno: kajmánek trpasličí (Paleosuchus palpebrosus)",
+      "Bydliště: Povodí Amazonky 7062",
       "Oblast Zalesněná",
-      "6&nbsp;915&nbsp;000",
+      "6 915 000",
       "JIŽNÍ AMERIKA",
       "--------------------------------",
-      "<Text style={styles.strong}>Rodinná anamnéza:</Text> Otec se dožil 40&nbsp;let, rozčtvrcená osobnost (střídání synonymních druhových jmen: kajman trpasličí/hladkočelý/malý/oboční); matka přehnané zalíbení ve vodopádech a peřejích.",
-      "<Text style={styles.strong}>Porod a psychomotorický vývoj:</Text> Samčí pohlaví určeno teplotou vajec. Narozen v&nbsp;hnízdě z&nbsp;rostlin a zeminy, po vylíhnutí téměř všechny znaky dospělce. Matka pomáhala z&nbsp;hnízda.",
-      "<Text style={styles.strong}>Dětství:</Text> Prožito v&nbsp;tiché oblasti v&nbsp;blízkosti čisté, rychle tekoucí řeky. Rodinná příslušnost k&nbsp;řádu krokodýlů, čeleď aligátorovití. Přezdívku „živoucí fosilie“ hodnotí jako psychotrauma.",
-      "<Text style={styles.strong}>Zaměstnání:</Text> Nezaměstnaný. Potenciál pro využití v&nbsp;tradiční medicíně – tuk na revmatismus, zuby vhodné jako amulety.",
-      "<Text style={styles.strong}>Povaha:</Text> Samotář, avšak útočný – způsobuje vážná poranění, při vyprovokování zasazuje ocasem nebezpečné rány (viz přílohu „Zranění způsobená psychiatrům“).",
-      "<Text style={styles.strong}>Zájmy:</Text> Plavání, odpočinek v&nbsp;noře délky 1,5–3,5&nbsp;m, bahenní koupele.",
-      "<Text style={styles.strong}>Abusus:</Text> Závislost na rybách.",
+      "Rodinná anamnéza: Otec se dožil 40 let, rozčtvrcená osobnost (střídání synonymních druhových jmen: kajman trpasličí/hladkočelý/malý/oboční); matka přehnané zalíbení ve vodopádech a peřejích.",
+      "Porod a psychomotorický vývoj: Samčí pohlaví určeno teplotou vajec. Narozen v hnízdě z rostlin a zeminy, po vylíhnutí téměř všechny znaky dospělce. Matka pomáhala z hnízda.",
+      "Dětství: Prožito v tiché oblasti v blízkosti čisté, rychle tekoucí řeky. Rodinná příslušnost k řádu krokodýlů, čeleď aligátorovití. Přezdívku „živoucí fosilie“ hodnotí jako psychotrauma.",
+      "Zaměstnání: Nezaměstnaný. Potenciál pro využití v tradiční medicíně – tuk na revmatismus, zuby vhodné jako amulety.",
+      "Povaha: Samotář, avšak útočný – způsobuje vážná poranění, při vyprovokování zasazuje ocasem nebezpečné rány (viz přílohu „Zranění způsobená psychiatrům“).",
+      "Zájmy: Plavání, odpočinek v noře délky 1,5–3,5 m, bahenní koupele.",
+      "Abusus: Závislost na rybách.",
       "--------------------------------",
-      "<Text style={styles.strong}>Nynější onemocnění:</Text> „Jsem předurčen být jako Brněnský drak na Staré radnici. /<Text style={styles.italic}>Co vám brání být jako Brněnský drak?</Text>/ Jsem nejmenší z&nbsp;druhů krokodýlů a délkou nepřekročím 170&nbsp;cm, Brněnský drak je třikrát delší. Pociťuji úzkosti a mám pocit, že můj život ztratil smysl. /<Text style={styles.italic}>Kdy potíže začaly a jak dlouho trvají?</Text>/ Hantec se učím od roku 2002, pravdu o&nbsp;své maximální délce jsem se dozvěděl, když jsem byl v 95.&nbsp;lekci, netuším, co je teď za měsíc. /<Text style={styles.italic}>Proč chcete být jako Brněnský drak?</Text>/ Chci viset v&nbsp;průjezdu, kde proudící vzduch připomíná chladnou řeku. Chci, aby se o&nbsp;mně říkaly legendy a aby ke mně lidé vzhlíželi. /<Text style={styles.italic}>Nemůžete být malým drakem?</Text>/ Ne, musím být velký a chci viset v&nbsp;Brně. Navíc mám nekvalitní kůži na břiše a ke konzervaci nechtějí použít drahé technologie.“",
+      "Nynější onemocnění: „Jsem předurčen být jako Brněnský drak na Staré radnici. /Co vám brání být jako Brněnský drak?/ Jsem nejmenší z druhů krokodýlů a délkou nepřekročím 170 cm, Brněnský drak je třikrát delší. Pociťuji úzkosti a mám pocit, že můj život ztratil smysl. /Kdy potíže začaly a jak dlouho trvají?/ Hantec se učím od roku 2002, pravdu o své maximální délce jsem se dozvěděl, když jsem byl v 95. lekci, netuším, co je teď za měsíc. /Proč chcete být jako Brněnský drak?/ Chci viset v průjezdu, kde proudící vzduch připomíná chladnou řeku. Chci, aby se o mně říkaly legendy a aby ke mně lidé vzhlíželi. /Nemůžete být malým drakem?/ Ne, musím být velký a chci viset v Brně. Navíc mám nekvalitní kůži na břiše a ke konzervaci nechtějí použít drahé technologie.“",
       "--------------------------------",
-      "<Text style={styles.strong}>Psychopatologický rozbor, diagnóza:</Text> Vigilní, lucidní, chybí orientace v&nbsp;čase. Bohatý rejstřík emocí, strnulé pohledy do prázdna střídány agresivitou. Obsese učením se hantecu, chorobné ztotožnění se s&nbsp;Brněnským drakem. Sebevražedné sklony, touha po popularitě. Výběr města podle názvu – koresponduje s&nbsp;pacientovým zalíbením v&nbsp;bahenních koupelích (<Text style={styles.italic}>brnno</Text> = blátivé místo). Chmurné myšlenky způsobeny pobytem ve stísněné noře. Podezření na bipolární afektivní poruchu.",
-      "<Text style={styles.strong}>Návrh terapie:</Text> Terárium osázené rostlinami pro lepší okysličení, poskytnutí pozornosti lidí, doporučena zoo v&nbsp;Brně."
+      "Psychopatologický rozbor, diagnóza: Vigilní, lucidní, chybí orientace v čase. Bohatý rejstřík emocí, strnulé pohledy do prázdna střídány agresivitou. Obsese učením se hantecu, chorobné ztotožnění se s Brněnským drakem. Sebevražedné sklony, touha po popularitě. Výběr města podle názvu – koresponduje s pacientovým zalíbením v bahenních koupelích (brnno = blátivé místo). Chmurné myšlenky způsobeny pobytem ve stísněné noře. Podezření na bipolární afektivní poruchu.",
+      "Návrh terapie: Terárium osázené rostlinami pro lepší okysličení, poskytnutí pozornosti lidí, doporučena zoo v Brně."
    ],
    "text_child" : [
-      "Vážení a milí, vítám vás u&nbsp;terária kajmánků trpasličích. Jestli si myslíte, že před vámi budou proskakovat obručemi, musím vás zklamat. Když totiž tihle plazi zjistili, jak moc je návštěvníci obdivují, samou radostí strnuli.",
-      "Vypadají skoro jako exponáty v&nbsp;muzeu, viďte? Pojďte si je prohlédnout trochu lépe. Nejprve se podívejte na jejich velikost. Kajmánci trpasličí svojí délkou obyčejně nepřekročí ani 150&nbsp;cm, což z&nbsp;nich dělá jeden z&nbsp;nejmenších druhů krokodýlů.",
-      "Dále se zaměřte na typické rysy kajmánků, kterými jsou hnědé oční duhovky a zkostnatělá oční víčka, jimž podobná nalezli archeologové jen u&nbsp;některých dinosaurů. Krokodýli kdysi opravdu obývali planetu současně s&nbsp;dinosaury, a proto se jim někdy říká živoucí fosilie. Kajmánci mají dokonce ve svém latinském názvu slovo <Text style={styles.italic}>paleosuchus</Text>, které znamená něco jako prastarý krokodýl.",
-      "Stále zoufáte, že se kajmánci moc nehýbou? Buďte rádi, že máte příležitost je vůbec vidět. V&nbsp;rodné Jižní Americe se často schovávají do podzemních doupat v&nbsp;okolí zalesněných řek a jezer. Sotva byste našli jiný druh krokodýla, který by se tak rád zdržoval jinde než ve vodě.",
-      "Prohlídka terária se pomalu chýlí ke konci. Nezbývá než konstatovat, že přes všechny spojitosti s&nbsp;dinosaury nejsou kajmánci žádné vykopávky. Chovat je doma mohou jen ti nejotrlejší. Na zádech i&nbsp;ocasu se kajmánci vyzbrojili kostěnými šupinami. Když se rozhodnou zaútočit, dost to bolí. Kořist, jíž jsou většinou ryby, polykají celou nebo po velkých kusech. Možná se teď ptáte, proč tady v&nbsp;zoo nesežerou kajmánci piraně, které s&nbsp;nimi sdílí terárium. Odpověď je jednoduchá – piraně jsou moc velké, mrštné a kajmánci pravidelně dostávají o&nbsp;dost lepší pochutiny."
+      "Vážení a milí, vítám vás u terária kajmánků trpasličích. Jestli si myslíte, že před vámi budou proskakovat obručemi, musím vás zklamat. Když totiž tihle plazi zjistili, jak moc je návštěvníci obdivují, samou radostí strnuli.",
+      "Vypadají skoro jako exponáty v muzeu, viďte? Pojďte si je prohlédnout trochu lépe. Nejprve se podívejte na jejich velikost. Kajmánci trpasličí svojí délkou obyčejně nepřekročí ani 150 cm, což z nich dělá jeden z nejmenších druhů krokodýlů.",
+      "Dále se zaměřte na typické rysy kajmánků, kterými jsou hnědé oční duhovky a zkostnatělá oční víčka, jimž podobná nalezli archeologové jen u některých dinosaurů. Krokodýli kdysi opravdu obývali planetu současně s dinosaury, a proto se jim někdy říká živoucí fosilie. Kajmánci mají dokonce ve svém latinském názvu slovo paleosuchus, které znamená něco jako prastarý krokodýl.",
+      "Stále zoufáte, že se kajmánci moc nehýbou? Buďte rádi, že máte příležitost je vůbec vidět. V rodné Jižní Americe se často schovávají do podzemních doupat v okolí zalesněných řek a jezer. Sotva byste našli jiný druh krokodýla, který by se tak rád zdržoval jinde než ve vodě.",
+      "Prohlídka terária se pomalu chýlí ke konci. Nezbývá než konstatovat, že přes všechny spojitosti s dinosaury nejsou kajmánci žádné vykopávky. Chovat je doma mohou jen ti nejotrlejší. Na zádech i ocasu se kajmánci vyzbrojili kostěnými šupinami. Když se rozhodnou zaútočit, dost to bolí. Kořist, jíž jsou většinou ryby, polykají celou nebo po velkých kusech. Možná se teď ptáte, proč tady v zoo nesežerou kajmánci piraně, které s nimi sdílí terárium. Odpověď je jednoduchá – piraně jsou moc velké, mrštné a kajmánci pravidelně dostávají o dost lepší pochutiny."
    ]
 }
 
