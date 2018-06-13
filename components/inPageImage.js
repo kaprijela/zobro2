@@ -25,7 +25,7 @@ class AnimalImage extends React.Component {
         style={this.props.lightboxStyle}
       >
         <Image
-          source={this.props.thumbnails[this.props.index]}
+          source={{uri: `${this.props.thumbnails[this.props.index]}`}}
           resizeMode='cover'
           style={this.props.thumbnailStyle}
         />
@@ -68,7 +68,7 @@ class AnimalImage extends React.Component {
           props.images.map((image, index) => (
               <View key={index} style={{flex: 1}}>
                 <Image
-                  source={image}
+                  source={{uri: `${image}`}}
                   resizeMode='contain'
                   style={{width: WINDOW_WIDTH, height: WINDOW_HEIGHT}}
                 />

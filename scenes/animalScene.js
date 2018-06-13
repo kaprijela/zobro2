@@ -6,7 +6,8 @@ import { TabNavigator , StackNavigator } from 'react-navigation';
 import Camera from 'react-native-camera';
 import { NavigationActions } from 'react-navigation';
 import HeaderBackButton from 'react-navigation/src/views/Header/HeaderBackButton';
-
+import DatabaseContent from '../components/databaseContent';
+import AnimalTemplate from '../components/animalTemplate';
 import {
   View,
   ScrollView,
@@ -43,23 +44,26 @@ class TextTab extends React.Component {
 
   render() {
     let AnimalDetail;
+    let isAdult;
     const animalName = this.props.screenProps.animal;
-
     if (!(animalName in animals)) {
       return (
         <Text>Neznámý QR kód načten: {animalName}</Text>
       );
     }
-
     if (this.props.screenProps.readerLevel === "adult") {
       AnimalDetail = animals[animalName].contentAdult;
+      isAdult = true;
     } else {
       AnimalDetail = animals[animalName].contentChild;
+      isAdult = false;
     }
-
     return (
       <ScrollView>
-        <AnimalDetail animal = {animalName}/>
+       <AnimalTemplate>
+        <View style={{marginTop:20}}/> //just a space
+        <AnimalDetail animalName={animalName} adult={isAdult}/>
+      </AnimalTemplate>
       </ScrollView>
     );
   }
@@ -159,7 +163,6 @@ export default class AnimalMainScreen extends React.Component {
   constructor(props) {
     super(props);
   }
-
   render() {
     let animalName;
     let adultImage;

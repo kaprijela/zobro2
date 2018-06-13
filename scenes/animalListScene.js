@@ -1,5 +1,6 @@
 import React from 'react';
-import { WIDTH } from '../styles/styles';
+import { WIDTH, HEIGHT } from '../styles/styles';
+import DatabaseContent from '../components/databaseContent';
 
 import {
   View,
@@ -29,9 +30,9 @@ class Cell extends React.Component {
         underlayColor='#bbbbbb'
         style= {{marginVertical: 0 , maxWidth:"89%"}}
       >
-        <View style={{paddingLeft: 5,flexDirection: 'row'}}>
-          <Image style={{width: "15%", height: "100%",marginRight: 5}} source={require('../images/footPrint2.png')}/>
-          <Text style={{color: 'black', fontSize:20}}>{this.props.item.name}</Text>
+        <View style={{paddingLeft: 5,flexDirection: 'row',  marginVertical:5}}>
+          <Image style={{width: WIDTH/5, height: HEIGHT/20,marginRight: 5}} source={this.props.item.img}/>
+          <Text style={{color: 'black', fontSize:HEIGHT/25, alignSelf: 'center',}}>{this.props.item.name}</Text>
         </View>
       </TouchableHighlight>
     );

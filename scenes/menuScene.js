@@ -1,6 +1,5 @@
 import React from 'react';
 import styles, { WIDTH } from '../styles/styles';
-import PouchDB from 'pouchdb-react-native'
 import {scenes, sceneTitles} from '../scenes';
 
 import {
@@ -9,11 +8,6 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-
-export const localDB = new PouchDB('myDB')
-const remoteDB = new PouchDB('https://admin:e5b4b424b1cb@couchdb-616f08.smileupps.com/animals')
-
-localDB.replicate.from(remoteDB, {live: true});  
 
 class MainMenuItem extends React.Component {
   constructor(props) {
@@ -102,7 +96,7 @@ export default class MenuScene extends React.Component {
              onPress={() => {this.props.navigation.navigate(sceneTitles[scenes.ABOUT].name, {animal: 'tygrSumatersky'})}}
              >
                 <Image style={styles.obrazokInfo} source={require('../images/info.png')}/>
-                <Text style={styles.popis}> O aplikacií</Text>
+                <Text style={styles.popis2}> O aplikacií</Text>
             </TouchableOpacity>
 
         </View>

@@ -25,10 +25,8 @@ export const HEADER_STYLE = {
 const styles = {
   headerWithImage:{
     alignItems: 'center',
-    height: "10%",
     marginBottom: 20,
     marginTop: 20,
-    width:"100%",
   },
   boxIm: {
     width: "65%",
@@ -50,18 +48,21 @@ const styles = {
     bottom:0,
     right:0,
     left:0,
-    width:"100%",
+    top:0,
+    height:"100%",
+    width:WIDTH,
   },
   obrazokInfo: {
-    height:"100%",
     width:"20%",
+    alignSelf:'center',
+    maxHeight:HEIGHT/20,
   },
   container: {
     flex:1,
   },
   nadpis: {
     color: '#FFFFFF',
-    fontSize:50,
+    fontSize: HEIGHT/10,
     fontWeight: '900',
     textAlign: 'left',
     textAlign:'left',
@@ -71,7 +72,7 @@ const styles = {
 
   nadpis2: {
     color: 'white',
-    fontSize:50,
+    fontSize:HEIGHT/10,
     fontWeight: '900',
     textAlign: 'left',
     textAlign:'left',
@@ -81,8 +82,8 @@ const styles = {
 
   firstBox: {
     backgroundColor: "#7DC383",
-    height:"50%",
-    width:"100%",
+    height:HEIGHT/2,
+    width:WIDTH,
   },
   secondBox: {
     backgroundColor: "#446E5C",
@@ -95,8 +96,10 @@ const styles = {
     position: 'absolute',
     bottom: 10,
     alignSelf: 'center',
+    alignItems:'center',
     flexDirection: 'row',
     width: "33%",
+    maxHeight:40,
   },
   mainText: {
     fontSize:30,
@@ -106,9 +109,19 @@ const styles = {
   },
   popis: {
     color: 'white',
-    fontSize: 14,
+    fontSize: WIDTH/25,
     fontWeight: '800',
     textAlign:'center',
+    alignSelf:'center',
+    width:"100%",
+  },
+  popis2: {
+    color: 'white',
+    fontSize: WIDTH/30,
+    fontWeight: '800',
+    textAlign:'center',
+    alignSelf:'center',
+    width:"80%",
   },
   text: {
     fontSize: 18,
@@ -174,16 +187,14 @@ const styles = {
   eventItemText: {
     fontSize: 22,
     fontWeight: 'bold',
-    color: '#e6e5eb',
+    color: '#000',
   },
   eventItemTextTime: {
     fontSize: 22,
-    color: '#e6e5eb',
+    color: '#000',
   },
   scrollView: {
     backgroundColor: 'white',
-    paddingRight: 25,
-    paddingLeft: 25,
     alignItems:'center',
   },
   ctext: {

@@ -1,9 +1,9 @@
 import React from 'react';
-import styles, { WIDTH } from '../styles/styles';
+import styles, { WIDTH, HEIGHT } from '../styles/styles';
 
 import Accordion from 'react-native-collapsible/Accordion';
 import PushNotification from 'react-native-push-notification';
-
+import {localDB} from '../index.ios.js';
 import {
   View,
   ScrollView,
@@ -12,11 +12,15 @@ import {
   ImageBackground,
   Alert
 } from 'react-native';
-import Text from '../components/animalText';
 
+import Text from '../components/animalText';
 import events from '../events.js';
 
 var _this = null;
+var eevents = [];
+var filteredEvents = [];
+var finall = [];
+
 
 export default class EventScene extends React.Component {
   constructor(props) {
@@ -47,14 +51,14 @@ export default class EventScene extends React.Component {
     return (
       <ImageBackground
         source={section.thumbnail}
-        style={{width: WIDTH, height: 80 }}
+        style={{width: "100%", height: (HEIGHT*15/100)}}
       >
         <View
           style={{
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: '#144d22B0',
-            height: 80,
+            backgroundColor: '#6A9C78B0',
+            height:"100%",
           }}
           ref={(component) => {
             if (!(_this.eventHeader.includes(component)) && (component !== null)) {
@@ -73,32 +77,41 @@ export default class EventScene extends React.Component {
 
   _renderContent(event) {
     return (
-      <View style={{backgroundColor: '#1d1b1b'}}>
+      <View style={{borderWidth: 1, borderColor:'black',backgroundColor: '#fff', width:"90%", alignSelf:'center', alignItems:'center', marginVertical: 10}}>
         <Image
           resizeMode='contain'
-          source={event.thumbnail}
-          style={{width: WIDTH, height: 120 }}
+          source={`${event.thumbnail}`}
+          style={{width: "100%", height: 120, marginTop:10 }}
         />
         <Text style={{fontSize: 22, paddingBottom: 20, paddingTop: 20,
-          color: 'white', textAlign: 'center'}}>
+          color: 'black', fontWeight:'bold', textAlign: 'center'}}>
           {event.place}
         </Text>
-        <Text style={{fontSize: 16, width: WIDTH, textAlign: 'center',
-          paddingBottom: 20, paddingTop: 20, color: 'white'}}>
+        <Text style={{fontSize: 16, width: "80%", textAlign: 'center',
+          paddingBottom: 20, paddingTop: 20, color: 'black'}}>
           Chcete být upozorněni na začátek krmení?
         </Text>
-        <View style={{height: 62, flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row', width:'95%', marginBottom:10}}>
           <TouchableHighlight underlayColor="#aaaaaa" style={[styles.eventButton, _this.styleEvent(event, 5)]} 
             onPress={() => _this.toggleEvent(event, 5)}>
-            <Text style={styles.eventButtonText}> 5 minut </Text>
+            <View style={{alignItems:'center', alignSelf:'center'}}>
+              <Text>5</Text>
+              <Text>minut</Text>
+            </View>
           </TouchableHighlight>
           <TouchableHighlight underlayColor="#aaaaaa" style={[styles.eventButton, _this.styleEvent(event, 10)]}
             onPress={() => _this.toggleEvent(event, 10)}>
-            <Text style={styles.eventButtonText}> 10 minut </Text>
+            <View style={{alignItems:'center', alignSelf:'center'}}>
+              <Text>10</Text>
+              <Text>minut</Text>
+            </View>
           </TouchableHighlight>
           <TouchableHighlight underlayColor="#aaaaaa" style={[styles.eventButton, _this.styleEvent(event, 15)]}
             onPress={() => _this.toggleEvent(event, 15)}>
-            <Text style={styles.eventButtonText}> 15 minut </Text>
+            <View style={{alignItems:'center', alignSelf:'center'}}>
+              <Text>15</Text>
+              <Text>minut</Text>
+            </View>
           </TouchableHighlight>
         </View>
       </View>
@@ -157,10 +170,7 @@ export default class EventScene extends React.Component {
 
     for (headerIndex in _this.eventHeader) {
       if (('' + headerIndex) === ('' + newIndex)) {
-          _this.refs.list.scrollTo({
-              x: 0,
-              y: (newIndex * HEIGHT_HEADER),
-          });
+
       }
     }
   }
@@ -176,30 +186,36 @@ export default class EventScene extends React.Component {
     }
   }
 
-  render() {
-    _this = this;
-    _this.eventHeader = [];
+  loadEvents = () => { 
+    localDB.get('events', {attachments : true})
+     .then (doc => {
+              this.forceUpdate();
+              eevents = [];
+              finall = [];
+              doc.feeding_events.forEach((i) => {
+                  eevents.push(i);
+              });
 
-    const currentDate = new Date();
-    const SHOW_RUNNING = 30;
-    let filteredEvents = events.filter((event) => {
-      const matchingDay = event['weekdays'].includes(currentDate.getDay());
+      const currentDate = new Date();
+      const SHOW_RUNNING = 30;
+      filteredEvents = eevents.filter((event) => {
+        console.log(event);
+        const matchingDay = event['weekdays'].includes(currentDate.getDay());
+        const eventHour = event['time'].split(":")[0];
+        const eventMinutes = event['time'].split(":")[1];
+        const eventTime = 60 * parseInt(eventHour) + parseInt(eventMinutes) + SHOW_RUNNING;
+        const currentTime = 60 * currentDate.getHours() + currentDate.getMinutes();
 
-      const eventHour = event['time'].split(":")[0];
-      const eventMinutes = event['time'].split(":")[1];
-      const eventTime = 60 * parseInt(eventHour) + parseInt(eventMinutes) + SHOW_RUNNING
-      const currentTime = 60 * currentDate.getHours() + currentDate.getMinutes();
+        const startDate = new Date(event.start_date); // include this day
+        const endDate = new Date(event.end_date);  // do not include this day
 
-      const startDate = new Date(event.startDate); // include this day
-      const endDate = new Date(event.endDate);  // do not include this day
-
-      const result = (
-          matchingDay &&
-          (eventTime >= currentTime) &&
-          (+startDate <= +currentDate) &&
-          (+endDate > +currentDate)
-        );
-      return result;
+        const result = (
+            matchingDay &&
+            (eventTime >= currentTime) &&
+            (+startDate <= +currentDate) &&
+            (+endDate > +currentDate)
+          );
+        return result;
     });
 
     filteredEvents.sort((a,b) => {
@@ -211,33 +227,39 @@ export default class EventScene extends React.Component {
         return 0;
       }
     });
-
-    return (
-      <ImageBackground
-        source={require('../images/background/about.png')}
-        style={{flex: 1, width: WIDTH}}
-      >
-        {
-          filteredEvents.length === 0
-          ? (
+      if (filteredEvents.length === 0)
+          {
+            finall.push(
             <View style={[styles.eventItem, {flex:1, flexDirection: 'row', backgroundColor: 'rgba(0,0,0,0)'}]}>
               <View style={{flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
                 <Text style={styles.eventItemText}>Je nám líto,</Text>
                 <Text style={styles.eventItemTextTime}>dnes už jsme nakrmení.</Text>
               </View>
-            </View>
-          ) : (
-            <ScrollView ref="list">
+            </View>);
+          }
+          else {
+            finall.push(
+            <ScrollView>
               <Accordion
                 sections={filteredEvents}
                 renderHeader={this._renderHeader}
                 renderContent={this._renderContent}
                 onChange={this._onEventChange}
               />
-            </ScrollView>
-          )
-        }
-      </ImageBackground>
+            </ScrollView>);
+          }
+      
+    });
+
+    return finall;
+  }
+
+  render() {
+    _this = this;
+    _this.eventHeader = [];
+    console.log(this.loadEvents());
+    return (
+    <View style={{flex: 1, width: WIDTH}}>{this.loadEvents()}</View>
     );
   }
 }
