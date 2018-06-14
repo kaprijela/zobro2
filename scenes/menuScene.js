@@ -96,7 +96,7 @@ export default class MenuScene extends React.Component {
              onPress={() => {this.props.navigation.navigate(sceneTitles[scenes.ABOUT].name, {animal: 'tygrSumatersky'})}}
              >
                 <Image style={styles.obrazokInfo} source={require('../images/info.png')}/>
-                <Text style={styles.popis2}> O aplikacií</Text>
+                <Text style={styles.popis2}> O aplikaci</Text>
             </TouchableOpacity>
 
         </View>

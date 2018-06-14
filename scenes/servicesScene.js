@@ -41,7 +41,7 @@ export default class ServicesScene extends React.Component {
             </Text>
           </View>
             <View style={styles.headerWithImage}>
-                <Text style={{color: '#000000', textAlign:'center', fontWeight: '900', fontSize: WIDTH/18,marginTop:20}}>
+                <Text style={{color: '#000000', textAlign:'center', fontWeight: '900', fontSize: WIDTH/15,marginTop:20}}>
                   Jízda na ponících v dětské zoo
                 </Text>
                 <Image style={{position:'relative', alignSelf:'center', width:WIDTH/3, height:HEIGHT/8}}source={require('../images/jost5.png')}/>
@@ -54,7 +54,7 @@ export default class ServicesScene extends React.Component {
           </Text>
 
            <View style={styles.headerWithImage}>
-             <Text style={{color: '#000000', alignSelf:'center', textAlign:'justify', fontWeight: '900', fontSize: WIDTH/18}}>
+             <Text style={{color: '#000000', alignSelf:'center', textAlign:'justify', fontWeight: '900', fontSize: WIDTH/15}}>
                 Půjčování dětských vozíků
               </Text>
               <Image style={{alignSelf:'center', width: WIDTH/6, height:HEIGHT/10}} source={require('../images/icons/vozicek.png')}/>
@@ -66,7 +66,7 @@ export default class ServicesScene extends React.Component {
 
 
           <View style={styles.headerWithImage}>
-            <Text style={{color: '#000000', textAlign:'center', fontWeight: '900', fontSize: WIDTH/18}}>
+            <Text style={{color: '#000000', textAlign:'center', fontWeight: '900', fontSize: WIDTH/15}}>
               Jízda vláčkem
             </Text>
             <Image style={{alignSelf:'center', width: WIDTH/5, height: HEIGHT/10}} source={require('../images/icons/vlacek.png')}/>
@@ -88,7 +88,7 @@ export default class ServicesScene extends React.Component {
           </View>
 
           <Text style={{textAlignVertical: 'center',
-            fontWeight: '900', paddingTop: 15, fontSize: WIDTH/18, marginVertical:15, textAlign:'center'}}>
+            fontWeight: '900', paddingTop: 15, fontSize: WIDTH/15, marginVertical:15, textAlign:'center'}}>
             Tohle prosím nedělejte:
           </Text>
           <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>

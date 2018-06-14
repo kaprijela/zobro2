@@ -69,7 +69,6 @@ const styles = {
     marginTop:"10%",
     marginLeft:"15%",
   },
-
   nadpis2: {
     color: 'white',
     fontSize:HEIGHT/10,

@@ -24,8 +24,6 @@ import animals from '../animals';
 import AnimalNeighbourScene from '../components/animalNeighbourScene';
 
 
-
-
 class TextTab extends React.Component {
   constructor(props) {
     super(props);
@@ -52,18 +50,13 @@ class TextTab extends React.Component {
       );
     }
     if (this.props.screenProps.readerLevel === "adult") {
-      AnimalDetail = animals[animalName].contentAdult;
       isAdult = true;
     } else {
-      AnimalDetail = animals[animalName].contentChild;
       isAdult = false;
     }
     return (
       <ScrollView>
-       <AnimalTemplate>
-        <View style={{marginTop:20}}/> //just a space
-        <AnimalDetail animalName={animalName} adult={isAdult}/>
-      </AnimalTemplate>
+        <DatabaseContent animalName={animalName} adult={isAdult}/>
       </ScrollView>
     );
   }

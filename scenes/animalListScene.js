@@ -1,6 +1,7 @@
 import React from 'react';
 import { WIDTH, HEIGHT } from '../styles/styles';
 import DatabaseContent from '../components/databaseContent';
+import {animals} from '../index.ios.js';
 
 import {
   View,
@@ -12,8 +13,6 @@ import {
 } from 'react-native';
 import { sceneTitles, scenes } from '../scenes';
 import AlphabetListView from 'react-native-alphabetlistview';
-
-import animals from '../animals';
 
 class Cell extends React.Component {
   constructor(props) {
@@ -31,7 +30,7 @@ class Cell extends React.Component {
         style= {{marginVertical: 0 , maxWidth:"89%"}}
       >
         <View style={{paddingLeft: 5,flexDirection: 'row',  marginVertical:5}}>
-          <Image style={{width: WIDTH/5, height: HEIGHT/20,marginRight: 5}} source={this.props.item.img}/>
+          <Image style={{width: WIDTH/5, height: HEIGHT/20,marginRight: 5}} source={{uri: `${this.props.item.thumbnail}`}}/>
           <Text style={{color: 'black', fontSize:HEIGHT/25, alignSelf: 'center',}}>{this.props.item.name}</Text>
         </View>
       </TouchableHighlight>
@@ -104,9 +103,8 @@ export default class AnimalListScene extends React.Component {
       'Á' : 'A',
       'Ř' : 'R',
     };
-
-    for (let animalID in animals) {
-      let animal = animals[animalID];
+    for (let animalID in animals[0]) {
+      let animal = animals[0][animalID];
       let firstLetter = animal.name.charAt(0).toUpperCase();
 
       if ((firstLetter === 'C') && (animal.name.charAt(1) === 'h')) {

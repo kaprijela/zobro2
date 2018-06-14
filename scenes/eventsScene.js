@@ -50,7 +50,7 @@ export default class EventScene extends React.Component {
   _renderHeader(section, index) {
     return (
       <ImageBackground
-        source={section.thumbnail}
+        source={{uri: `${section.thumbnail}`}}
         style={{width: "100%", height: (HEIGHT*15/100)}}
       >
         <View
@@ -80,7 +80,7 @@ export default class EventScene extends React.Component {
       <View style={{borderWidth: 1, borderColor:'black',backgroundColor: '#fff', width:"90%", alignSelf:'center', alignItems:'center', marginVertical: 10}}>
         <Image
           resizeMode='contain'
-          source={`${event.thumbnail}`}
+          source={{uri: `${event.thumbnail}`}}
           style={{width: "100%", height: 120, marginTop:10 }}
         />
         <Text style={{fontSize: 22, paddingBottom: 20, paddingTop: 20,
@@ -199,7 +199,6 @@ export default class EventScene extends React.Component {
       const currentDate = new Date();
       const SHOW_RUNNING = 30;
       filteredEvents = eevents.filter((event) => {
-        console.log(event);
         const matchingDay = event['weekdays'].includes(currentDate.getDay());
         const eventHour = event['time'].split(":")[0];
         const eventMinutes = event['time'].split(":")[1];
@@ -257,7 +256,6 @@ export default class EventScene extends React.Component {
   render() {
     _this = this;
     _this.eventHeader = [];
-    console.log(this.loadEvents());
     return (
     <View style={{flex: 1, width: WIDTH}}>{this.loadEvents()}</View>
     );

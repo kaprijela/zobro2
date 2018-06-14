@@ -4,8 +4,8 @@ import styles from '../styles/styles.js';
 import {HEIGHT, WIDTH} from '../styles/styles.js';
 import AnimalText from './animalText';
 import InPageImage from './inPageImage';
-import {localDB} from '../index.ios.js';
 import AnimalTemplate from './animalTemplate';
+import {localDB} from '../index.ios.js';
 
 var arrayOfTexts = [];
 var arrayOfImagesFull = [];
@@ -13,33 +13,36 @@ var arrayOfImagesElement = [];
 var arrayOfImagesThumbnails = [];
 var arrayOfFacts = [];
 var finalArray = [];
-var _style;
 var img1 = require('../images/arrow.png');
 var img2 = require('../images/arrowUp.png')
 var actualImg = require('../images/arrow.png');;
 
 var showFact = false;
+var factsStyle = {
+    height: 0,
+    marginTop:20,
+    display: 'none',
+};
 
 export default class DatabaseContent extends React.Component {
   constructor(props) {
     super(props);
-    this.handlerButtonOnClick = this.handlerButtonOnClick.bind(this);
   }
 
-  handlerButtonOnClick(){
-    if (showFact){ // clicked button to show facts about animal 
-      _style = {
-            height: HEIGHT/2,
-            overflow: 'hidden',
-            display:'flex',
-      }
+  handlerButtonOnClick = () => {
+    showFact = !showFact;
+    if (showFact) {
+      factsStyle = {
+        height: HEIGHT/2,
+        marginTop:20,
+        maxWidth:"80%",
+      };
       actualImg = img2;
-    }
-    else{ // clicked button to hide facts about animal. Default style
-      _style = {
-          height: 0,
-          display:'none',
-        }
+    } else {
+      factsStyle = {
+        height: 0,
+        display: 'none',
+      };
       actualImg = img1;
     }
   }
@@ -47,6 +50,7 @@ export default class DatabaseContent extends React.Component {
    loadText = () => { // function to load informations about animal.
     localDB.get(this.props.animalName, {attachments : true})
     .then (doc => {
+        this.forceUpdate();
         arrayOfFacts = [];
         arrayOfTexts = [];
         arrayOfImagesFull = [];
@@ -60,7 +64,7 @@ export default class DatabaseContent extends React.Component {
         if (this.props.adult) { // Adult version of animal
             doc.text_adult.forEach((i, idx) => {
               arrayOfTexts.push(
-                <AnimalText style={{marginVertical:"10%", fontSize: HEIGHT/25}} key={idx}>
+                <AnimalText style={{marginVertical:"10%", fontSize: HEIGHT/25, maxWidth:"80%"}} key={idx}>
                   {i}
                 </AnimalText>
               )});
@@ -68,7 +72,7 @@ export default class DatabaseContent extends React.Component {
         else { // Child version of animal
           doc.text_child.forEach((i, idx) => {
               arrayOfTexts.push(
-                <AnimalText style={{marginVertical:"10%", fontSize: HEIGHT/25}} key={idx}>
+                <AnimalText style={{marginVertical:"10%", fontSize: HEIGHT/25, maxWidth:"80%"}} key={idx}>
                   {i}
                 </AnimalText>
               )});
@@ -93,9 +97,9 @@ export default class DatabaseContent extends React.Component {
             );
         });
 
-        arrayOfFacts.push(<ScrollView style={_style}>{tmp}</ScrollView>); //add Box of facts
-        arrayOfFacts.push(<TouchableOpacity onPress={this.handlerButtonOnClick}><Image style={{top:10, alignSelf:'center', marginBottom: 25}} source={actualImg}/></TouchableOpacity>); //add arrow
-
+        arrayOfFacts.push(<ScrollView style = {factsStyle}>{tmp}</ScrollView>); //add Box of facts
+        arrayOfFacts.push(<TouchableOpacity onPress={this.handlerButtonOnClick}><Image style={{top:10, alignSelf:'center', marginBottom: 25}} source={actualImg}/></TouchableOpacity>);
+        
         finalArray = finalArray.concat(arrayOfFacts);
 
         while (true) { // zip texts with images. In order : Image, text, image, text ....
@@ -124,23 +128,9 @@ export default class DatabaseContent extends React.Component {
   }
 
   render() {
-    if (showFact){ // clicked button to show facts about animal 
-      _style = {
-            height: HEIGHT/2,
-            overflow: 'hidden',
-            display:'flex',
-      }
-      actualImg = img2;
-    }
-    else{ // clicked button to hide facts about animal. Default style
-      _style = {
-          height: 0,
-          display:'none',
-        }
-      actualImg = img1;
-    }
-        return (
+    return (
       <AnimalTemplate>
+        <Text style={{marginTop:20, fontWeight:'900', fontSize:HEIGHT/20, alignSelf:'center'}}>Základní informace</Text>
         {this.loadText()}
       </AnimalTemplate>
     );
