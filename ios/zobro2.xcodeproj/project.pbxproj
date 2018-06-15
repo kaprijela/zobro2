@@ -1262,7 +1262,7 @@
 					"-lc++",
 					"-v",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cz.zoobrno;
+				PRODUCT_BUNDLE_IDENTIFIER = skuska;
 				PRODUCT_NAME = zobro2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1290,7 +1290,7 @@
 					"-lc++",
 					"-v",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cz.zoobrno;
+				PRODUCT_BUNDLE_IDENTIFIER = skuska;
 				PRODUCT_NAME = zobro2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

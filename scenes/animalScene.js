@@ -244,7 +244,6 @@ export default class AnimalMainScreen extends React.Component {
       }
       }
     );
-
     const p = {};
     p.animal = animalURI;
     p.readerLevel = this.props.readerLevel;

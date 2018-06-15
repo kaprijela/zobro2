@@ -19,6 +19,7 @@ export var animals = [];
 localDB.get('animals', {attachments : true}) // get list of animals
     .then (doc => {animals.push(doc.animals)});
 
+
 export default class Zobro2App extends React.Component {
   store = createStore(AppReducer);
 

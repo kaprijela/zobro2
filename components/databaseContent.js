@@ -16,7 +16,8 @@ var finalArray = [];
 var img1 = require('../images/arrow.png');
 var img2 = require('../images/arrowUp.png')
 var actualImg = require('../images/arrow.png');;
-
+var nameOfAnimal = "";
+var tmpb = "alpaka"; //temporary name for animal
 var showFact = false;
 var factsStyle = {
     height: 0,
@@ -48,7 +49,7 @@ export default class DatabaseContent extends React.Component {
   }
 
    loadText = () => { // function to load informations about animal.
-    localDB.get(this.props.animalName, {attachments : true})
+    localDB.get(nameOfAnimal, {attachments : true})
     .then (doc => {
         this.forceUpdate();
         arrayOfFacts = [];
@@ -128,6 +129,12 @@ export default class DatabaseContent extends React.Component {
   }
 
   render() {
+
+    if (this.props.animalName == tmpb){
+      nameOfAnimal = this.props.animalName;
+    }
+    tmpb = this.props.animalName;
+
     return (
       <AnimalTemplate>
         <Text style={{marginTop:20, fontWeight:'900', fontSize:HEIGHT/20, alignSelf:'center'}}>Základní informace</Text>
