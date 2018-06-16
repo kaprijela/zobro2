@@ -1,7 +1,7 @@
 import React from 'react';
 import { WIDTH, HEIGHT } from '../styles/styles';
 import DatabaseContent from '../components/databaseContent';
-import {animals} from '../index.ios.js';
+import {animals} from '../index.js';
 
 import {
   View,

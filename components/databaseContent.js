@@ -5,7 +5,7 @@ import {HEIGHT, WIDTH} from '../styles/styles.js';
 import AnimalText from './animalText';
 import InPageImage from './inPageImage';
 import AnimalTemplate from './animalTemplate';
-import {localDB} from '../index.ios.js';
+import {localDB} from '../index.js';
 
 var arrayOfTexts = [];
 var arrayOfImagesFull = [];

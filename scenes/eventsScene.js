@@ -3,7 +3,7 @@ import styles, { WIDTH, HEIGHT } from '../styles/styles';
 
 import Accordion from 'react-native-collapsible/Accordion';
 import PushNotification from 'react-native-push-notification';
-import {localDB} from '../index.ios.js';
+import {localDB} from '../index.js';
 import {
   View,
   ScrollView,

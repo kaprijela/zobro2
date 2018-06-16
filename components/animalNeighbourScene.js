@@ -11,7 +11,7 @@ import {
   Image,
 } from 'react-native';
 
-import {animals} from '../index.ios.js';
+import {animals} from '../index.js';
 import { sceneTitles, scenes } from '../scenes';
 
 var navigation;
