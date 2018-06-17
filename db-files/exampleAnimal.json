@@ -1,16 +1,16 @@
 {
    "_id" : "alpaka",
-   "facts" : {
-      "Délka březosti" : "342 - 368 dnů",
-      "Délka života" : "15 - 20 let",
-      "Potrava" : "tráva, byliny, sukulenty, mechy",
-      "Počet mláďat" : "1",
-      "Stupeň ohrožení" : "domestikovaný druh",
-      "Velikost" : "výška vkohoutku 100 cm",
-      "Váha" : "55 - 65 kg",
-      "Výskyt" : "náhorní plošiny And, od Ekvádoru po severozápadní Argentinu, Bolívie, Peru",
-      "Způsob života" : "žije ve stádech tvořených 7 - 10 samicemi smláďaty avedoucím samcem"
-   },
+   "facts" : [
+      "Délka březosti: 342 - 368 dnů",
+      "Délka života: 15 - 20 let",
+      "Potrava: tráva, byliny, sukulenty, mechy",
+      "Počet mláďat: 1",
+      "Stupeň ohrožení: domestikovaný druh",
+      "Velikost: výška vkohoutku 100 cm",
+      "Váha: 55 - 65 kg",
+      "Výskyt: náhorní plošiny And, od Ekvádoru po severozápadní Argentinu, Bolívie, Peru",
+      "Způsob života: žije ve stádech tvořených 7 - 10 samicemi smláďaty avedoucím samcem"
+   ],
    "images" : [
       {
          "full" : "data:image/jpg;base64,/9j/4AA...",
