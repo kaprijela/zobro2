@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<article lang="en">
+  <articleinfo>
+    <title>PB138 Zoo Application Improvement</title>
+    <author>
+      <firstname>Gabriela</firstname>
+      <surname>Kandová</surname>
+    </author>
+  </articleinfo>
+
+  <section>
+    <title id="my-task">My task - data preparation</title>
+    <para>
+My main task was to ensure that the PouchDB database could contain data originally hardcoded into the application source code. Alongiside data extraction, my secondary task was to test and give feedback for the Android version of the application.
+    </para>
+    <para>
+Firstly, we devised a suitable document structure for animal and event entries based on the existing application structure and limitations of React Native and the PouchDB database. PouchDB is a NoSQL database and uses documents in the JSON format to store data, and the design (available on the project Wiki) reflects that.
+    </para>
+    <para>
+Secondly, text was extracted from the source code, corresponding images were encoded for text-based storage and the ZOO Brno website was scraped for animal facts to be included in the application. This was the most time-consuming and technologically intensive part of the project.
+    </para>
+    <para>
+Thirdly, the resulting documents were checked for errors and inserted into our own remote instance of the database. This included testing the implementation.
+    </para>
+  </section>
+
+  <section>
+    <title>Problems</title>
+    <section>
+      <title>Text extraction</title>
+      <para>
+The text corresponding to each animal entry was stored in the form of text nodes between specific React "Text" tags representing contents of the Text component. We had to resort to parsing via regular expresssions because Javascript source files are not well-formed XML documents.
+      </para>
+    </section>
+
+    <section>
+      <title>Attachment storage</title>
+      <para>
+Part of the solution was to remove the need for storing images among the application source codes. Unfortunately, the PouchDB API for React Native doesn't yet support downloading attachments. We decided to bypass this limitation by storing the images as base64-encoded strings alongside other attributes. This solution worked without any further problems.
+      </para>
+    </section>
+
+    <section>
+      <title>Facts</title>
+      <para>
+It was decided that the best source of animal facts was the official ZOO website. The facts are arranged into a table, yet with slightly inconsistent formatting. Scraping was thus done in two runs to cover all animals and the resulting facts were added to the animal database entries.
+      </para>
+    </section>
+
+    <section>
+      <title>Android testing</title>
+      <para>
+While all design and functional features worked as expected, the Android platform proved to be the more problematic one compared to iOS. Since PouchDB uses AsyncStorage for its local database, the Android application experiences problems because of its 6MB size limit. One possible solution is to raise the limit, but it did not yield satisfactory results. Another would be to write a new storage adapter for use in the application.
+      </para>
+    </section>
+  </section>
+
+  <section>
+    <title>Summary</title>
+    <para>All text content, images and other animal-related information (as well as feeding events) were successfully extracted and migrated to the database. This part of the project also provided many opportunities to improve one's text processing skills and communication among team members.</para>
+  </section>
+</article>
