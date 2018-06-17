@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<article lang="en">
+  <articleinfo>
+    <title>PB138 Zoo Application Improvement</title>
+    <author>
+      <firstname>Tomas</firstname>
+      <surname>Flimel</surname>
+    </author>
+  </articleinfo>
+
+  <section>
+    <title id="my-task">My task</title>
+
+    <para>My task was to create and manage databases that will automatically synchronize data with the zobro2 application.</para>
+    <para>I have started working with CouchDB and PouchDB databases and their synchronization by creating a simple website. It was fast and intuitive because these databases were designed for this purpose. CouchDB has a very user-friendly web-based graphical user interface, so it takes only a few minutes to edit the documents, and if I needed to edit several documents at once, I prepared a short python script to fill the CouchDB database, which was then replicated to the local PouchDB database.</para>
+  </section>
+
+  <section>
+    <title>Problems</title>
+
+    <para>The first problem was choosing a suitable host for our CouchDB remote database. We chose smileupps.com despite the fact that they provide a free trial version for only 30 days.</para>
+    <para>Another problem was with the storage of individual animal images because the react native works incorrectly with attachments in the PouchDB. Based on Gabriela's proposal, we chose to store individual images as base64-encoded elements.</para>
+  </section>
+
+  <section>
+    <title>Summary</title>
+
+    <para>Overall, working with the database was not problematic.</para>
+  </section>
+</article>
