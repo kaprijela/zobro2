@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<article lang="en">
+  <articleinfo>
+    <title>PB138 Zoo Application Improvement</title>
+    <author>
+      <firstname>Simon</firstname>
+      <surname>Berka</surname>
+    </author>
+  </articleinfo>
+
+  <section>
+    <title id="my-task">My task</title>
+
+    <para>The task for me was to take care of documentation and Wiki.</para>
+    <para>Writing all the required text was pretty straightforward. For text formatting standard Markdown markup language was used. In the documentation I tried to cover questions that may raise from developers or app users. For the project website the one-page Midnight theme was used. It is hosted in the gh-pages branch. </para>
+  </section>
+
+  <section>
+    <title>Problems</title>
+    <para>
+      The real pain is spinning up the emulator. This process takes tremendous amount of time even on a quite powerful computer.
+    </para>
+  </section>
+
+  <section>
+    <title>Summary</title>
+
+    <para>All the project documentation can be found on Github wiki. </para>
+    <para>Interesting fact is that GitHub Pages can load template files without having them in a repository. It is enough to state its name in the _config.yml file.</para>
+  </section>
+</article>
