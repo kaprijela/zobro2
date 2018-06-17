@@ -19,7 +19,7 @@
   <section>
     <title>Problems</title>
 
-    <para>The first problem was adapting at new programming language React Native. Before the project i used to develop mobile applications only in swift. Second problem was parsing text from database, which contained elements with specific style. Unfortunately, there is no module in React Native which would parse these elements. One of the possible ways is parsing manually. However, this method requires implementation of infinity options for style and types of element using switch or dozens of if's. Thus we decided to parse these elements as normal text.<para/>
+    <para>The first problem was adapting at new programming language React Native. Before the project i used to develop mobile applications only in swift. Second problem was parsing text from database, which contained elements with specific style. Unfortunately, there is no module in React Native which would parse these elements. One of the possible ways is parsing manually. However, this method requires implementation of infinity options for style and types of element using switch or dozens of if's. Thus we decided to parse these elements as normal text.</para>
   </section>
 
   <section>
