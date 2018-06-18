@@ -21,6 +21,12 @@ This is onepage site serving as a description of improving application for ZOO B
 ### Final Reports
 All final reports can be found in the `_reports` folder [here](https://github.com/kaprijela/zobro2/tree/master/_reports).
 
+You can also view its HTML form:
+- [Gabriela Kandová](https://cdn.rawgit.com/kaprijela/zobro2/e772559f/_reports/kandova.html)
+- [Marek Pastierik](https://cdn.rawgit.com/kaprijela/zobro2/e772559f/_reports/pastierik.html)
+- [Tomáš Flimel](https://cdn.rawgit.com/kaprijela/zobro2/e772559f/_reports/flimel.html)
+- [Šimon Berka](https://cdn.rawgit.com/kaprijela/zobro2/e772559f/_reports/berka.html)
+
 ### Database structure
 Every animal has to contain specific information. You can examine the template below, or see a full file example [here](https://github.com/kaprijela/zobro2/blob/dbfiles/db-files/exampleAnimal.json).
 
