@@ -11,7 +11,7 @@ import {
   Image,
 } from 'react-native';
 
-import animals from '../animals';
+import {animals} from '../index.ios.js';
 import { sceneTitles, scenes } from '../scenes';
 
 var navigation;
@@ -23,7 +23,7 @@ class Cell extends React.Component {
   }
 
   render() {
-    const animal = animals[this.props.item.animal];
+    const animal = animals[0][this.props.item.animal];
     const direction = this.props.item.direction;
     let directionArrow = null;
 
@@ -67,7 +67,7 @@ export default class AnimalNeighbourScene extends React.Component {
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
         dataSource: ds.cloneWithRows(
-          animals[this.props.animal].neighbours.map(function(v) { return v })
+          animals[0][this.props.animal].neighbours.map(function(v) { return v })
       )
     };
   }

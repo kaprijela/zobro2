@@ -38,12 +38,8 @@ export default class AboutScene extends React.Component {
     ];
 
     return (
-      <ImageBackground
-        source={require('../images/background/about.png')}
-        style={{flex: 1, width: WIDTH}}
-      >
         <ScrollView minimumZoomScale={MIN_ZOOM} maximumZoomScale={MAX_ZOOM}
-          style={[styles.contentView,{backgroundColor: undefined}]}>
+          style={[styles.contentView,{backgroundColor: '#fff', paddingLeft: 20, paddingRight:20}]}>
           <Text style={{paddingTop: 0}}>
             Aplikace vznikla ve spolupráci Zoo Brno a Masarykovy univerzity. Na projektu se podíleli studenti oboru Český jazyk se specializací počítačová lingvistika (PLIN) a pracovníci Ústavu českého jazyka Filozofické fakulty MU. Nasazení aplikace do praxe bylo finančně podpořeno Centrem pro transfer technologií MU.
           </Text>
@@ -98,7 +94,6 @@ export default class AboutScene extends React.Component {
             Vostřelová Klára
           </Text>
         </ScrollView>
-      </ImageBackground>
     );
   }
 }

@@ -25,7 +25,7 @@ class AnimalImage extends React.Component {
         style={this.props.lightboxStyle}
       >
         <Image
-          source={this.props.thumbnails[this.props.index]}
+          source={{uri: `${this.props.thumbnails[this.props.index]}`}}
           resizeMode='cover'
           style={this.props.thumbnailStyle}
         />
@@ -68,7 +68,7 @@ class AnimalImage extends React.Component {
           props.images.map((image, index) => (
               <View key={index} style={{flex: 1}}>
                 <Image
-                  source={image}
+                  source={{uri: `${image}`}}
                   resizeMode='contain'
                   style={{width: WINDOW_WIDTH, height: WINDOW_HEIGHT}}
                 />
@@ -95,8 +95,7 @@ export default class InPageImage extends React.Component {
             index={this.props.indexes[0]}
             images={this.props.images}
             thumbnails={this.props.thumbnails}
-            thumbnailStyle={[styles.inPageSingleThumbnail, {width: styles.WIDTH - 92}]}
-            lightboxStyle={{borderColor: '#3cac54', borderRightWidth: 12}}
+            thumbnailStyle={[styles.inPageSingleThumbnail]}
           />
         </View>
       );

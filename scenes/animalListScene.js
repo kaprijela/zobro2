@@ -1,17 +1,18 @@
 import React from 'react';
-import { WIDTH } from '../styles/styles';
+import { WIDTH, HEIGHT } from '../styles/styles';
+import DatabaseContent from '../components/databaseContent';
+import {animals} from '../index.ios.js';
 
 import {
   View,
   Text,
+  Image,
   TouchableHighlight,
   TextInput,
   ImageBackground
 } from 'react-native';
 import { sceneTitles, scenes } from '../scenes';
 import AlphabetListView from 'react-native-alphabetlistview';
-
-import animals from '../animals';
 
 class Cell extends React.Component {
   constructor(props) {
@@ -26,9 +27,11 @@ class Cell extends React.Component {
           {animal: this.props.item.animal});
         }}
         underlayColor='#bbbbbb'
+        style= {{marginVertical: 0 , maxWidth:"89%"}}
       >
-        <View style={{height:30, paddingLeft: 5}}>
-          <Text style={{color: 'white'}}>{this.props.item.name}</Text>
+        <View style={{paddingLeft: 5,flexDirection: 'row',  marginVertical:5}}>
+          <Image style={{width: WIDTH/5, height: HEIGHT/20,marginRight: 5}} source={{uri: `${this.props.item.thumbnail}`}}/>
+          <Text style={{color: 'black', fontSize:HEIGHT/25, alignSelf: 'center',}}>{this.props.item.name}</Text>
         </View>
       </TouchableHighlight>
     );
@@ -43,14 +46,14 @@ class SectionItem extends React.Component {
   render() {
     return (
       <View style={{
-        backgroundColor: this.props.bgColor,
+        backgroundColor: undefined,
         width: 30,
         height: 30,
         borderLeftWidth: 1,
-        borderColor: 'white',
+        borderColor: 'black',
         justifyContent: 'center',
       }}>
-        <Text style={{color: 'white', textAlign: 'center', fontWeight: '700'}}>
+        <Text style={{color: 'black', textAlign: 'center', fontWeight: '700'}}>
           {this.props.title}
         </Text>
       </View>
@@ -67,7 +70,7 @@ class SectionHeader extends React.Component {
     // inline styles used for brevity, use a stylesheet when possible
     var textStyle = {
       textAlign:'center',
-      color:'#fff',
+      color:'black',
       fontWeight:'700',
       fontSize:24,
       backgroundColor: 'rgba(0,0,0,0)',
@@ -100,9 +103,8 @@ export default class AnimalListScene extends React.Component {
       'Á' : 'A',
       'Ř' : 'R',
     };
-
-    for (let animalID in animals) {
-      let animal = animals[animalID];
+    for (let animalID in animals[0]) {
+      let animal = animals[0][animalID];
       let firstLetter = animal.name.charAt(0).toUpperCase();
 
       if ((firstLetter === 'C') && (animal.name.charAt(1) === 'h')) {
@@ -188,8 +190,7 @@ export default class AnimalListScene extends React.Component {
 
   render() {
     return (
-      <ImageBackground
-        source={require('../images/background/about.png')}
+      <View
         style={{flex: 1, width: WIDTH}}
       >
         <TextInput
@@ -209,7 +210,7 @@ export default class AnimalListScene extends React.Component {
           sectionHeaderHeight={22.5}
           compareFunction={(a,b) => {return a.localeCompare(b); }}
         />
-      </ImageBackground>
+      </View>
     );
   }
 }

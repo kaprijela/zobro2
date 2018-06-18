@@ -1,40 +1,36 @@
 import React from 'react';
 import styles, { WIDTH } from '../styles/styles';
+import {scenes, sceneTitles} from '../scenes';
 
 import {
-  ScrollView,
-  TouchableHighlight,
-  ImageBackground
+  Text,
+  View,
+  Image,
+  TouchableOpacity,
 } from 'react-native';
-import Text from '../components/animalText';
-
-import {scenes, sceneTitles} from '../scenes';
 
 class MainMenuItem extends React.Component {
   constructor(props) {
       super(props);
   }
 
+
   render() {
     const bgColor = sceneTitles[this.props.scene].bgColor;
     const title = sceneTitles[this.props.scene].title;
+    const imageName = sceneTitles[this.props.scene].img; 
+
+
 
     return (
-      <TouchableHighlight
-        underlayColor='#aaaaaa'
-        onPress={() => {this.props.navigation.navigate(sceneTitles[this.props.scene].name, {animal: 'tygrSumatersky'})}}
-        >
-          <ImageBackground
-            style={styles.mainMenuItem}
-            source={sceneTitles[this.props.scene].background}
-          >
-            <Text style={[styles.mainMenuItemText, {
-              textAlign: this.props.alignText,
-              paddingRight: 32,
-              paddingLeft: 32,
-            }]}>{title}</Text>
-          </ImageBackground>
-        </TouchableHighlight>
+
+      <TouchableOpacity
+         style={styles.box}
+         onPress={() => {this.props.navigation.navigate(sceneTitles[this.props.scene].name, {animal: 'tygrSumatersky'})}}
+         >
+              <Image style={styles.boxIm} source={imageName}/>
+              <Text style={styles.popis}>{title}</Text>
+      </TouchableOpacity>
     );
   }
 }
@@ -49,35 +45,62 @@ export default class MenuScene extends React.Component {
   }
 
   render() {
-    const MIN_ZOOM = 0.5;
-    const MAX_ZOOM = 5.0;
-    const TEXT_COLOR = 'black';
 
-    const PADDING = 20;
-    const WIDTH_WITH_PADDING = WIDTH - PADDING;
-    const menuItems = [scenes.QR_READER, scenes.ANIMAL_LIST, scenes.EVENTS,
-      scenes.GAME, scenes.SERVICES, scenes.VISITORS, scenes.ABOUT];
+    const menuItems1 = [scenes.ANIMAL_LIST, scenes.EVENTS,scenes.QR_READER];
+
+    const menuItems2 = [scenes.GAME, scenes.SERVICES, scenes.VISITORS];
 
     return (
-      <ImageBackground
-        source={require('../images/background/about.png')}
-        style={{flex: 1, width: WIDTH}}
-      >
-      <ScrollView minimumZoomScale={MIN_ZOOM} maximumZoomScale={MAX_ZOOM}
-       style={[styles.contentView,{paddingLeft: 0, paddingRight: 0, paddingTop: 0,
-       backgroundColor: undefined}]}>
-       {
-          menuItems.map((itemInMenu, index) => (
-            <MainMenuItem
-              key={index}
-              alignText={index % 2 ? 'left' : 'right'}
-              scene={itemInMenu}
-              navigation={this.props.navigation}
-            />
-          ))
-        }
-       </ScrollView>
-      </ImageBackground>
+      <View style={styles.container}>
+        <View style={styles.firstBox}>
+              <Text style={styles.nadpis}>
+                  Zoo
+              </Text>
+              <Text style={styles.nadpis2}>
+                 Brno
+              </Text>
+              <Image style={styles.obrazok} source={require('../images/brno8.png')}/>
+        </View>
+
+        <View style={styles.secondBox}>
+
+            <View style={styles.boxes}>
+
+                     {
+                      menuItems1.map((itemInMenu, index) => (
+                        <MainMenuItem
+                          key={index}
+                          scene={itemInMenu}
+                          navigation={this.props.navigation}
+                        />
+                      ))
+                    }
+              
+            </View>
+
+             <View style={styles.boxes}>
+
+                    {
+                      menuItems2.map((itemInMenu, index) => (
+                        <MainMenuItem
+                          key={index}
+                          scene={itemInMenu}
+                          navigation={this.props.navigation}
+                        />
+                      ))
+                    }
+            </View>
+
+            <TouchableOpacity
+             style={styles.infoBox}
+             onPress={() => {this.props.navigation.navigate(sceneTitles[scenes.ABOUT].name, {animal: 'tygrSumatersky'})}}
+             >
+                <Image style={styles.obrazokInfo} source={require('../images/info.png')}/>
+                <Text style={styles.popis2}> O aplikaci</Text>
+            </TouchableOpacity>
+
+        </View>
+      </View>
     );
   }
 }

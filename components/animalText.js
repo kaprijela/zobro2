@@ -13,7 +13,7 @@ export default class AnimalText extends React.Component {
 
   render() {
     return (
-      <Text ref={component => this._root = component} style={[styles.text, this.props.style]}>
+      <Text ref={component => this._root = component} style={[styles.text,{textAlign: 'justify'}, this.props.style]}>
         {this.props.children}
       </Text>
     );

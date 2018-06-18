@@ -159,7 +159,8 @@ export default animalDb = {
       {animal: 'tygrSumatersky', direction: 'front'},
       {animal: 'rosomakSibirsky', direction: 'right'},
       {animal: 'soviceSnezni', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/tygrSumatersky/01-thumb.jpg'),
   },
 
   'medvedKamcatsky': {
@@ -172,7 +173,8 @@ export default animalDb = {
       {animal: 'lachtanMedvedi', direction: 'left'},
       {animal: 'manul', direction: 'left'},
       {animal: 'rosomakSibirsky', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/medvedKamcatsky/01-thumb.jpg'),
   },
 
   'rosomakSibirsky' : {
@@ -184,7 +186,8 @@ export default animalDb = {
       {animal: 'rosomakSibirsky', direction: 'front'},
       {animal: 'tygrSumatersky', direction: 'left'},
       {animal: 'medvedKamcatsky', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/rosomakSibirsky/01-thumb.jpg'),
   },
 
   'medvedLedni' : {
@@ -196,7 +199,8 @@ export default animalDb = {
       {animal: 'medvedLedni', direction: 'front'},
       {animal: 'rysKanadsky', direction: 'left'},
       {animal: 'orelVychodni', direction: 'back'},
-    ]
+    ],
+    img : require('./images/animals/medvedLedni/01-thumb.jpg'),
   },
 
   'jerabMandzusky' : {
@@ -208,7 +212,8 @@ export default animalDb = {
       {animal: 'jerabMandzusky', direction: 'front'},
       {animal: 'myvalSeverni', direction: 'left'},
       {animal: 'pustikBelavy', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/jerabMandzusky/01-thumb.jpg'),
   },
 
   'soviceSnezni' : {
@@ -224,7 +229,8 @@ export default animalDb = {
       {animal: 'ustricnikVelky', direction: 'right'},
       {animal: 'kulikPisecny', direction: 'right'},
 
-    ]
+    ],
+    img : require('./images/animals/soviceSnezni/01-thumb.jpg'),
   },
 
   'jespakBojovny' : {
@@ -239,7 +245,8 @@ export default animalDb = {
       {animal: 'kulikPisecny', direction: 'front'},
       {animal: 'soviceSnezni', direction: 'left'},
       {animal: 'lachtanMedvedi', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/jespakBojovny/01-thumb.jpg'),
   },
 
   'kulikPisecny' : {
@@ -254,7 +261,8 @@ export default animalDb = {
       {animal: 'ustricnikVelky', direction: 'front'},
       {animal: 'soviceSnezni', direction: 'left'},
       {animal: 'lachtanMedvedi', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/kulikPisecny/01-thumb.jpg'),
   },
 
   'ustricnikVelky' : {
@@ -269,7 +277,8 @@ export default animalDb = {
       {animal: 'kulikPisecny', direction: 'front'},
       {animal: 'soviceSnezni', direction: 'left'},
       {animal: 'lachtanMedvedi', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/ustricnikVelky/01-thumb.jpg'),
   },
 
 //  'liskaPolarni' : {
@@ -291,7 +300,8 @@ export default animalDb = {
       {animal: 'manul', direction: 'front'},
       {animal: 'medvedKamcatsky', direction: 'right'},
       {animal: 'lachtanMedvedi', direction: 'back'},
-    ]
+    ],
+    img : require('./images/animals/manul/01-thumb.jpg'),
   },
 
   'lachtanMedvedi' : {
@@ -308,7 +318,8 @@ export default animalDb = {
       {animal: 'medvedKamcatsky', direction: 'left'},
       {animal: 'myvalSeverni', direction: 'right'},
       {animal: 'manul', direction: 'back'},
-    ]
+    ],
+    img : require('./images/animals/lachtanMedvedi/01-thumb.jpg'),
   },
 
   'bobrKanadsky' : {
@@ -320,7 +331,8 @@ export default animalDb = {
       {animal: 'bobrKanadsky', direction: 'front'},
       {animal: 'myvalSeverni', direction: 'right'},
       {animal: 'vlkArkticky', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/bobrKanadsky/01-thumb.jpg'),
   },
 
   'myvalSeverni' : {
@@ -335,7 +347,8 @@ export default animalDb = {
       {animal: 'bobrKanadsky', direction: 'back'},
       {animal: 'pustikBradaty', direction: 'right'},
       {animal: 'rysKanadsky', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/myvalSeverni/01-thumb.jpg'),
   },
 
   'agamaKocincinska' : {
@@ -348,7 +361,8 @@ export default animalDb = {
       {animal: 'dvojjazycnikHaitsky', direction: 'right'},
       {animal: 'bazilisekZeleny', direction: 'right'},
       {animal: 'anakondaVelka', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/agamaKocincinska/01-thumb.jpg'),
   },
 
   'dzelada' : {
@@ -360,7 +374,8 @@ export default animalDb = {
       {animal: 'dzelada', direction: 'front'},
       {animal: 'paovceHrivnata', direction: 'front'},
       {animal: 'sobPolarni', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/dzelada/01-thumb.jpg'),
   },
 
   'husickaVdovka' : {
@@ -373,7 +388,8 @@ export default animalDb = {
       {animal: 'lemurKata', direction: 'right'},
       {animal: 'husickaDvoubarva', direction: 'front'},
       {animal: 'plamenakRuzovy', direction: 'front'},
-    ]
+    ],
+    img : require('./images/animals/husickaVdovka/01-thumb.jpg'),
   },
 
   'jaguarundi' : {
@@ -385,7 +401,8 @@ export default animalDb = {
       {animal: 'jaguarundi', direction: 'front'},
       {animal: 'lemurBelocely', direction: 'right'},
       {animal: 'variCernobily', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/jaguarundi/01-thumb.jpg'),
   },
 
   'klokanZlutonohy' : {
@@ -398,7 +415,8 @@ export default animalDb = {
       {animal: 'pandaCervena', direction: 'back'},
       {animal: 'vikuna', direction: 'back'},
       {animal: 'zebraGrevyho', direction: 'front'},
-    ]
+    ],
+    img : require('./images/animals/klokanZlutonohy/01-thumb.jpg'),
   },
 
   'krajtaKobercova' : {
@@ -410,7 +428,8 @@ export default animalDb = {
       {animal: 'krajtaKobercova', direction: 'front'},
       {animal: 'papousekPatagonsky', direction: 'left'},
       {animal: 'pustikObecny', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/krajtaKobercova/01-thumb.jpg'),
   },
 
   'kunPrevalskeho' : {
@@ -421,7 +440,8 @@ export default animalDb = {
     neighbours: [
       {animal: 'kunPrevalskeho', direction: 'front'},
       {animal: 'jakDomaci', direction: 'back'},
-    ]
+    ],
+    img : require('./images/animals/kunPrevalskeho/01-thumb.jpg'),
   },
 
   'lemurKata' : {
@@ -436,7 +456,8 @@ export default animalDb = {
       {animal: 'husickaVdovka', direction: 'left'},
       {animal: 'plamenakRuzovy', direction: 'left'},
       {animal: 'husickaDvoubarva', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/lemurKata/01-thumb.jpg'),
   },
 
   'levKonzsky' : {
@@ -449,7 +470,8 @@ export default animalDb = {
       {animal: 'agapornisFischeruv', direction: 'left'},
       {animal: 'kunPrevalskeho', direction: 'back'},
       {animal: 'jakDomaci', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/levKonzsky/01-thumb.jpg'),
   },
 
   'levhartCejlonsky' : {
@@ -463,7 +485,8 @@ export default animalDb = {
       {animal: 'krajtaKobercova', direction: 'right'},
       {animal: 'pavKorunkaty', direction: 'back'},
       {animal: 'pavianAnubi', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/levhartCejlonsky/01-thumb.jpg'),
   },
 
   'mandelikHajni' : {
@@ -473,7 +496,8 @@ export default animalDb = {
     animal: 'mandelikHajni',
     neighbours: [
       {animal: 'mandelikHajni', direction: 'front'},
-    ]
+    ],
+    img : require('./images/animals/mandelikHajni/01-thumb.jpg'),
   },
 
   'pandaCervena' : {
@@ -487,7 +511,8 @@ export default animalDb = {
       {animal: 'klokanZlutonohy', direction: 'back'},
       {animal: 'zakoSedy', direction: 'right'},
       {animal: 'zakoSedy', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/pandaCervena/01-thumb.jpg'),
   },
 
   'plamenakRuzovy' : {
@@ -500,7 +525,8 @@ export default animalDb = {
       {animal: 'lemurKata', direction: 'right'},
       {animal: 'husickaVdovka', direction: 'front'},
       {animal: 'husickaDvoubarva', direction: 'front'},
-    ]
+    ],
+    img : require('./images/animals/plamenakRuzovy/01-thumb.jpg'),
   },
 
   'tamarinZlutoruky' : {
@@ -512,7 +538,8 @@ export default animalDb = {
       {animal: 'tamarinZlutoruky', direction: 'front'},
       {animal: 'maraStepni', direction: 'left'},
       {animal: 'nosalCerveny', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/tamarinZlutoruky/01-thumb.jpg'),
   },
 
   'urzonKanadsky' : {
@@ -523,7 +550,8 @@ export default animalDb = {
     neighbours: [
       {animal: 'urzonKanadsky', direction: 'front'},
       {animal: 'cipmankVychodni', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/urzonKanadsky/01-thumb.jpg'),
   },
 
   'varanKomodsky' : {
@@ -537,7 +565,8 @@ export default animalDb = {
       {animal: 'zelvaUhlirska', direction: 'right'},
       {animal: 'vousivkaPestra', direction: 'right'},
       {animal: 'kuanduObecny', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/varanKomodsky/01-thumb.jpg'),
   },
 
   'velbloudDvouhrby' : {
@@ -550,7 +579,8 @@ export default animalDb = {
       {animal: 'zebraGrevyho', direction: 'left'},
       {animal: 'jakDomaci', direction: 'right'},
       {animal: 'kunPrevalskeho', direction: 'front'},
-    ]
+    ],
+    img : require('./images/animals/velbloudDvouhrby/01-thumb.jpg'),
   },
 
   'vlkArkticky' : {
@@ -565,7 +595,8 @@ export default animalDb = {
       {animal: 'pustikBelavy', direction: 'back'},
       {animal: 'losEvropsky', direction: 'back'},
       {animal: 'jelenMilu', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/vlkArkticky/01-thumb.jpg'),
   },
 
   'zebraChapmanova' : {
@@ -578,7 +609,8 @@ export default animalDb = {
       {animal: 'agapornisFischeruv', direction: 'right'},
       {animal: 'zirafaSitovana', direction: 'front'},
       {animal: 'lemurKata', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/zebraChapmanova/01-thumb.jpg'),
   },
 
   'cipmankVychodni' : {
@@ -590,7 +622,8 @@ export default animalDb = {
       {animal: 'cipmankVychodni', direction: 'front'},
       {animal: 'orelBelohlavy', direction: 'right'},
       {animal: 'urzonKanadsky', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/cipmankVychodni/01-thumb.jpg'),
   },
 
   'jakDomaci' : {
@@ -603,7 +636,8 @@ export default animalDb = {
       {animal: 'bizon', direction: 'right'},
       {animal: 'velbloudDvouhrby', direction: 'back'},
       {animal: 'kunPrevalskeho', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/jakDomaci/01-thumb.jpg'),
   },
 
   'kapybara' : {
@@ -618,7 +652,8 @@ export default animalDb = {
       {animal: 'vlkHrivnaty', direction: 'right'},
       {animal: 'psounPreriovy', direction: 'left'},
       {animal: 'agutiAzaruv', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/kapybara/01-thumb.jpg'),
   },
 
   'leskoptevTribarva' : {
@@ -628,7 +663,8 @@ export default animalDb = {
     animal: 'leskoptevTribarva',
     neighbours: [
       {animal: 'leskoptevTribarva', direction: 'front'},
-    ]
+    ],
+    img : require('./images/animals/leskoptevTribarva/01-thumb.jpg'),
   },
 
   'orelBelohlavy' : {
@@ -641,7 +677,8 @@ export default animalDb = {
       {animal: 'urzonKanadsky', direction: 'right'},
       {animal: 'cipmankVychodni', direction: 'left'},
       {animal: 'skunkPruhovany', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/orelBelohlavy/01-thumb.jpg'),
   },
 
   'orelVychodni' : {
@@ -653,7 +690,8 @@ export default animalDb = {
       {animal: 'orelVychodni', direction: 'front'},
       {animal: 'rysKanadsky', direction: 'right'},
       {animal: 'medvedLedni', direction: 'back'},
-    ]
+    ],
+    img : require('./images/animals/orelVychodni/01-thumb.jpg'),
   },
 
   'psounPreriovy' : {
@@ -667,7 +705,8 @@ export default animalDb = {
       {animal: 'tapirJihoamericky', direction: 'back'},
       {animal: 'kapybara', direction: 'back'},
 //      {animal: 'agutiAzaruv', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/psounPreriovy/01-thumb.jpg'),
   },
 
   'rysKanadsky' : {
@@ -680,7 +719,8 @@ export default animalDb = {
       {animal: 'myvalSeverni', direction: 'right'},
       {animal: 'medvedLedni', direction: 'left'},
       {animal: 'orelVychodni', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/rysKanadsky/01-thumb.jpg'),
   },
 
   'skunkPruhovany' : {
@@ -693,7 +733,8 @@ export default animalDb = {
       {animal: 'vlkArkticky', direction: 'right'},
       {animal: 'orelBelohlavy', direction: 'left'},
       {animal: 'urzonKanadsky', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/skunkPruhovany/01-thumb.jpg'),
   },
 
   'snovacRudozoby' : {
@@ -703,7 +744,8 @@ export default animalDb = {
     animal: 'snovacRudozoby',
     neighbours: [
       {animal: 'snovacRudozoby', direction: 'front'},
-    ]
+    ],
+    img : require('./images/animals/snovacRudozoby/01-thumb.jpg'),
   },
 
   'tapirJihoamericky' : {
@@ -718,7 +760,8 @@ export default animalDb = {
       {animal: 'vlkHrivnaty', direction: 'right'},
       {animal: 'psounPreriovy', direction: 'left'},
 //      {animal: 'agutiAzaruv', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/tapirJihoamericky/01-thumb.jpg'),
   },
 
   'tenkozobecOpacny' : {
@@ -733,7 +776,8 @@ export default animalDb = {
       {animal: 'kulikPisecny', direction: 'front'},
       {animal: 'soviceSnezni', direction: 'left'},
       {animal: 'lachtanMedvedi', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/tenkozobecOpacny/01-thumb.jpg'),
   },
 
   'zebraGrevyho' : {
@@ -748,7 +792,8 @@ export default animalDb = {
       {animal: 'kakaduPalmovy', direction: 'back'},
       {animal: 'kiangVychodni', direction: 'left'},
       {animal: 'takinIndicky', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/zebraGrevyho/01-thumb.jpg'),
   },
 
   'maraStepni' : {
@@ -761,7 +806,8 @@ export default animalDb = {
       {animal: 'tygrSumatersky', direction: 'back'},
       {animal: 'surikata', direction: 'left'},
       {animal: 'tamarinZlutoruky', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/maraStepni/01-thumb.jpg'),
   },
 
   'nosalCerveny' : {
@@ -775,7 +821,8 @@ export default animalDb = {
  //     {animal: 'konopkaObecna', direction: 'right'},
 //      {animal: 'zvonohlikZahradni', direction: 'right'},
 //      {animal: 'krepelkaJaponska', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/nosalCerveny/01-thumb.jpg'),
   },
 
   'lemurBelocely' : {
@@ -787,7 +834,8 @@ export default animalDb = {
       {animal: 'lemurBelocely', direction: 'front'},
       {animal: 'jaguarundi', direction: 'left'},
 //      {animal: 'lemurCerny', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/lemurBelocely/01-thumb.jpg'),
   },
 
   'losEvropsky' : {
@@ -800,7 +848,8 @@ export default animalDb = {
       {animal: 'takinIndicky', direction: 'right'},
       {animal: 'jelenMilu', direction: 'left'},
       {animal: 'vlkArkticky', direction: 'back'},
-    ]
+    ],
+    img : require('./images/animals/losEvropsky/01-thumb.jpg'),
   },
 
   'surikata' : {
@@ -814,7 +863,8 @@ export default animalDb = {
       {animal: 'maraStepni', direction: 'right'},
       {animal: 'tygrSumatersky', direction: 'back'},
       {animal: 'pekariBelobrady', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/surikata/01-thumb.jpg'),
   },
 
   'simpanz' : {
@@ -827,7 +877,8 @@ export default animalDb = {
       {animal: 'variCernobily', direction: 'right'},
       {animal: 'nosalCerveny', direction: 'back'},
       {animal: 'surikata', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/simpanz/01-thumb.jpg'),
   },
 
   'krkavecVelky' : {
@@ -840,7 +891,8 @@ export default animalDb = {
       {animal: 'rarohVelky', direction: 'left'},
       {animal: 'levhartCejlonsky', direction: 'back'},
       {animal: 'pavKorunkaty', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/krkavecVelky/01-thumb.jpg'),
   },
 
   'takinIndicky' : {
@@ -854,7 +906,8 @@ export default animalDb = {
       {animal: 'kiangVychodni', direction: 'right'},
       {animal: 'losEvropsky', direction: 'right'},
 //      {animal: 'wapitiSibirsky', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/takinIndicky/01-thumb.jpg'),
   },
 
   'vikuna' : {
@@ -867,7 +920,8 @@ export default animalDb = {
       {animal: 'alpaka', direction: 'right'},
       {animal: 'klokanZlutonohy', direction: 'left'},
       {animal: 'pandaCervena', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/vikuna/01-thumb.jpg'),
   },
 
   'pustikBelavy' : {
@@ -880,7 +934,8 @@ export default animalDb = {
       {animal: 'vyrVirginsky', direction: 'right'},
       {animal: 'jerabMandzusky', direction: 'left'},
       {animal: 'vlkArkticky', direction: 'back'},
-    ]
+    ],
+    img : require('./images/animals/pustikBelavy/01-thumb.jpg'),
   },
 
   'vyrVirginsky' : {
@@ -892,7 +947,8 @@ export default animalDb = {
       {animal: 'vyrVirginsky', direction: 'front'},
       {animal: 'vyrVelky', direction: 'right'},
       {animal: 'pustikBelavy', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/vyrVirginsky/01-thumb.jpg'),
   },
 
   'kozorozecSibirsky' : {
@@ -904,7 +960,8 @@ export default animalDb = {
       {animal: 'kozorozecSibirsky', direction: 'front'},
       {animal: 'pekariBelobrady', direction: 'back'},
       {animal: 'alpaka', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/kozorozecSibirsky/01-thumb.jpg'),
   },
 
   'pekariBelobrady' : {
@@ -917,7 +974,8 @@ export default animalDb = {
       {animal: 'surikata', direction: 'right'},
       {animal: 'alpaka', direction: 'left'},
       {animal: 'kozorozecSibirsky', direction: 'front'},
-    ]
+    ],
+    img : require('./images/animals/pekariBelobrady/01-thumb.jpg'),
   },
 
   'vyrVelky' : {
@@ -930,7 +988,8 @@ export default animalDb = {
       {animal: 'pustikBradaty', direction: 'right'},
       {animal: 'vyrVirginsky', direction: 'left'},
       {animal: 'urzonKanadsky', direction: 'back'},
-    ]
+    ],
+    img : require('./images/animals/vyrVelky/01-thumb.jpg'),
   },
 
   'pavKorunkaty' : {
@@ -943,7 +1002,8 @@ export default animalDb = {
       {animal: 'levhartCejlonsky', direction: 'back'},
       {animal: 'krkavecVelky', direction: 'left'},
       {animal: 'pavianAnubi', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/pavKorunkaty/01-thumb.jpg'),
   },
 
   'paovceHrivnata' : {
@@ -955,7 +1015,8 @@ export default animalDb = {
       {animal: 'paovceHrivnata', direction: 'front'},
       {animal: 'dzelada', direction: 'front'},
       {animal: 'sobPolarni', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/paovceHrivnata/01-thumb.jpg'),
   },
 
   'pustikBradaty' : {
@@ -967,7 +1028,8 @@ export default animalDb = {
       {animal: 'pustikBradaty', direction: 'front'},
       {animal: 'myvalSeverni', direction: 'right'},
       {animal: 'vyrVelky', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/pustikBradaty/01-thumb.jpg'),
   },
 
   'sobPolarni' : {
@@ -981,7 +1043,8 @@ export default animalDb = {
 //      {animal: 'jelenMilu', direction: 'back'},
       {animal: 'paovceHrivnata', direction: 'left'},
       {animal: 'dzelada', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/sobPolarni/01-thumb.jpg'),
   },
 
   'rarohVelky' : {
@@ -993,7 +1056,8 @@ export default animalDb = {
       {animal: 'rarohVelky', direction: 'front'},
       {animal: 'pustikObecny', direction: 'left'},
       {animal: 'krkavecVelky', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/rarohVelky/01-thumb.jpg'),
   },
 
   'araArarauna' : {
@@ -1008,7 +1072,8 @@ export default animalDb = {
 //      {animal: 'zvonohlikZahradni', direction: 'left'},
       {animal: 'papousekPatagonsky', direction: 'right'},
 //      {animal: 'turako', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/araArarauna/01-thumb.jpg'),
   },
 
   'papousekPatagonsky' : {
@@ -1020,7 +1085,8 @@ export default animalDb = {
       {animal: 'papousekPatagonsky', direction: 'front'},
       {animal: 'araArarauna', direction: 'left'},
       {animal: 'krajtaKobercova', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/papousekPatagonsky/01-thumb.jpg'),
   },
 
   'pavianAnubi' : {
@@ -1032,7 +1098,8 @@ export default animalDb = {
       {animal: 'pavianAnubi', direction: 'front'},
       {animal: 'levhartCejlonsky', direction: 'right'},
 //      {animal: 'lemurCerny', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/pavianAnubi/01-thumb.jpg'),
   },
 
   'alpaka' : {
@@ -1045,7 +1112,8 @@ export default animalDb = {
       {animal: 'kozorozecSibirsky', direction: 'right'},
       {animal: 'pekariBelobrady', direction: 'right'},
       {animal: 'vikuna', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/alpaka/01-thumb.jpg'),
   },
 
   'kiangVychodni' : {
@@ -1058,7 +1126,8 @@ export default animalDb = {
       {animal: 'zebraGrevyho', direction: 'right'},
       {animal: 'takinIndicky', direction: 'back'},
 //    vlevo nekolik dalsich druhu koni
-    ]
+    ],
+    img : require('./images/animals/kiangVychodni/01-thumb.jpg'),
   },
 
   'bizon' : {
@@ -1069,7 +1138,8 @@ export default animalDb = {
     neighbours: [
       {animal: 'bizon', direction: 'front'},
       {animal: 'jakDomaci', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/bizon/01-thumb.jpg'),
   },
 
   'vlkHrivnaty' : {
@@ -1082,7 +1152,8 @@ export default animalDb = {
       {animal: 'tapirJihoamericky', direction: 'left'},
       {animal: 'kapybara', direction: 'left'},
 //      {animal: 'zelvaNadherna', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/vlkHrivnaty/01-thumb.jpg'),
   },
 
   'zirafaSitovana' : {
@@ -1095,7 +1166,8 @@ export default animalDb = {
 //      {animal: 'agapornisFischeruv', direction: 'right'},
       {animal: 'zebraChapmanova', direction: 'front'},
       {animal: 'lemurKata', direction: 'left'},
-    ]
+    ],
+    img : require('./images/animals/zirafaSitovana/01-thumb.jpg'),
   },
 
   'husickaDvoubarva' : {
@@ -1108,7 +1180,8 @@ export default animalDb = {
       {animal: 'husickaVdovka', direction: 'front'},
       {animal: 'plamenakRuzovy', direction: 'front'},
       {animal: 'lemurKata', direction: 'right'},
-    ]
+    ],
+    img : require('./images/animals/husickaDvoubarva/01-thumb.jpg'),
   },
 
   'kajmanekTrpaslici' : {
@@ -1123,7 +1196,8 @@ export default animalDb = {
 //      {animal: 'leguanekModry', direction: 'left'},
 //      {animal: 'cukvalaZavalita', direction: 'left'},
 //      {animal: 'agutiAzaruv', direction: 'back'},
-    ]
+    ],
+    img : require('./images/animals/kajmanekTrpaslici/01-thumb.jpg'),
   },
 
 

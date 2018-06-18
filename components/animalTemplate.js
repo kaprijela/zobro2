@@ -11,22 +11,9 @@ export default class AnimalTemplate extends React.Component {
 
   render() {
     return (
-      <View>
-        <View>
-          <InPageImage firstImage={true} indexes={this.props.firstIndex}
-            thumbnails={this.props.thumbnails} images={this.props.images} />
-        </View>
         <View style={styles.scrollView}>
           {this.props.children}
         </View>
-      </View>
     );
   }
-};
-
-AnimalTemplate.propTypes = {
-    firstIndex: PropTypes.arrayOf(PropTypes.number).isRequired,
-    thumbnails: PropTypes.array.isRequired,
-    images: PropTypes.array.isRequired,
-    children: PropTypes.arrayOf(PropTypes.element).isRequired,
 };
