@@ -33,8 +33,8 @@ Every animal has to contain specific information. You can examine the template b
 ```
 {
    "_id" : "alpaka",
-   "facts" : {
-   },
+   "facts" : [
+   ],
    "images" : [
       {
          "full" : "data:image/jpg;base64,/9j/4AA...",
@@ -45,8 +45,8 @@ Every animal has to contain specific information. You can examine the template b
       "text string"
    ],
    "text_child" : [
-      "text string with",
-      "<Text style={styles.strong}>formatting</Text>"
+      "text string representing a paragraph",
+      "another string"
    ]
 }
 
@@ -59,4 +59,4 @@ Every animal has to contain specific information. You can examine the template b
 - full network access is required for data updates
 
 ### Application Download
-Stable application can be downloaded from [Play Store](https://play.google.com/store/apps/details?id=com.zoobrno). This testing version needs to be downloaded from the [GitHub repository](http://github.com/kaprijela/zobro2).
+Stable application can be downloaded from [Play Store](https://play.google.com/store/apps/details?id=com.zoobrno). This testing version needs to be downloaded and compiled from the [GitHub repository](http://github.com/kaprijela/zobro2).
